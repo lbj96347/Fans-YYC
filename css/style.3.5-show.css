@@ -23,32 +23,34 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 .left {
   position: relative;
   left: 20px;
-  margin-left: -16px;
 }
 .middle {
   position: relative;
-  left: 120px;
+  left: 140px;
   margin-left: -16px;
+  background-position: -8px -300px!important;
+}
+.right {
+  position: relative;
+  left: 260px;
+  margin-left: -16px;
+  background-position: -8px -320px!important;
 }
 .middle1 {
   position: relative;
-  left: 80px;
-  margin-left: -16px;
+  left: 70px;
+  background-position: 0px -70px!important;
 }
 .middle2 {
   position: relative;
   left: 120px;
-  margin-left: -16px;
-}
-.right {
-  position: relative;
-  left: 240px;
-  margin-left: -16px;
+  background-position: 0px -140px!important;
 }
 .bottom-right {
   position: relative;
   left: 180px;
   margin-left: -16px;
+  background-position: 0px -210px!important;
 }
 #container {
   width: 100%;
@@ -72,6 +74,11 @@ ul {
   width: 320px;
   position: relative;
   top: 5px;
+}
+.playbill-button {
+  background: url(../images/tool/home-1.png) no-repeat;
+  background-position: -8px -280px;
+  padding-left: 20px;
 }
 #playbill-bar {
   position: relative;
@@ -98,7 +105,7 @@ ul {
   margin-top: 10px; 
   width: 45px;
   height: 60px;
-  background: url(../images/test-platbill.jpg) no-repeat;
+  background: url(../images/test-playbill.jpg) no-repeat;
   float: left;
 }
 .show-Miscellaneous {
@@ -109,6 +116,9 @@ ul {
   left: 5px;
   top: 10px;
   vertical-align: middle;
+}
+.show-Miscellaneous span {
+  margin-right: 5px
 }
 .free-note {
   -webkit-border-radius: 5px;
@@ -128,3 +138,13 @@ ul {
 
 
 /* part of button list */ 
+#float-button {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+}
+#float-button a {
+  padding-left: 35px;
+  padding-top: 15px;
+  background: url(../images/tool/home-1.png);
+}

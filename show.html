@@ -9,7 +9,7 @@
     <meta name='author' content='' >
     <title>演出列表-友演出-歌迷应用-开发</title>
     <link rel='stylesheet' type='text/css' href='css/style.3.5-show.css' />
-    <script type='text/javascript' language='javascript' src='js/jquery-1.7.min.js'></script>
+    <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
   </head>
     <body>
       <div id='container'>
@@ -17,9 +17,9 @@
         <section id='playbill' class='round8'>
           <section id='picture'>
             <p id='playbill-button-list'>
-              <a class='playbill-button left'>back</a>
-              <a class='playbill-button middle'>hand</a>
-              <a class='playbill-button right'>refresh</a>
+              <a class='playbill-button left'></a>
+              <a class='playbill-button middle'></a>
+              <a class='playbill-button right'></a>
             </p>
             <!-- message of the show -->
             <p id='playbill-bar'>
@@ -32,6 +32,22 @@
         <div id='wrapper'>
           <div id='scroller'>
             <ul class='showList'>
+              <!-- show item -->
+              <li class='round8'>
+                <div class='mini-playbill'>
+                </div>
+                <div class='show-message'>
+                  <p class='show-Miscellaneous'>
+                    <span class='show-date'>11-12-31</span>
+                    <span class='show-local'>佛山</span>
+                    <span class='show-type'>电音</span>
+                    <span class='show-kind'>大型演出</span>
+                    <span class='free-note' style='margin-left: 25px;'>Free</span>
+                  </p>
+                  <p class='show-text'>This show is for Chinese Chinese</p>
+                </div>
+              </li>
+              <!-- show item -->
               <!-- show item -->
               <li class='round8'>
                 <div class='mini-playbill'>
@@ -102,10 +118,10 @@
 
         <!-- button list part -->
         <div id='float-button' class=''>
-          <a class='left'>plus</a>
-          <a class='middle1'>collection</a>
-          <a class='middle2'>setting</a>
-          <a class='bottom-right'>more</a>
+          <a class='left' id='plus-button'></a>
+          <a class='middle1' id='collect-button'></a>
+          <a class='middle2' id='setting-button'></a>
+          <a class='bottom-right' id='more-button'></a>
         </div>
 
       </div>
