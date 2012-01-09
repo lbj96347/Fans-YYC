@@ -20,6 +20,9 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 .align-center {
   text-align: center;
   vertical-align: middle;
@@ -77,6 +80,11 @@ ul {
   padding: 0px;
   color: white;
 }
+.single-show {
+  width: 320px;
+  height: 460px;
+  background: url(../images/Penguin.jpg) no-repeat;
+}
 .show-message {
   width: 220px;
   height: 50px;
@@ -86,20 +94,74 @@ ul {
   padding-left: 10px;
   padding-right: 10px;
 }
+#collect-press {
+  width: 32px;
+  height: 32px;
+  background: black;
+  top: -15px;
+  left: 255px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 10;
+  -webkit-border-radius: 20px;
+  border: 2px solid white;
+}
 .show-Miscellaneou {
   width: 240px;
   height: 20px;
   font-size: 10px;
   line-height: 20px;
   text-align: center;
-  top: 18px;
+  top: -5px;
   left: 40px;
+}
+.show-Miscellaneous span {
+  margin-right: 5px
+}
+.free-note {
+  -webkit-border-radius: 5px;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: white;
+  font-size: 12px!important;
+  background: rgb(255,151,0);
+  margin-left: 50px;
 }
 #single-bottom-bar {
   width: 240px;
   height: 50px;
-  top: 310px;
+  top: 380px;
   left: 40px;
   text-align: center;
-  line-height: 50px;
+  line-height: 60px;
+}
+#single-bottom-bar span {
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: url(../images/tool/single-page-cut.png) no-repeat;
+  background-position: -15px 0px;
+}
+/* 详细页面底部按钮 */
+#map-button {
+  background-position: -15px -60px!important;
+}
+#share-button {
+  background-position: -15px -120px!important;
+}
+#buy-button {
+  background-position: 0px -180px!important;
+  padding-left: 65px!important;
+}
+
+/* 详细页面底部按钮 */
+#loader {
+  width: 240px;
+  height: 4px;
+  background: #fafafa;
+  top: 440px;
+  left: 40px;
 }
