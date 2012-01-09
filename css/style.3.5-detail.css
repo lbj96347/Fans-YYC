@@ -1,0 +1,69 @@
+/* public style here */
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0px;
+  padding: 0px;
+}
+.round8 {
+  -webkit-border-radius: 8px;
+}
+.align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+/*
+ *
+ * 修改不同屏幕的样式的时候要根据宽度进行修改，这里使用了固定数值
+ *
+ */
+.left {
+  position: relative;
+  left: 20px;
+}
+.middle {
+  position: relative;
+  left: 140px;
+  margin-left: -16px;
+  background-position: -8px -300px!important;
+}
+.right {
+  position: relative;
+  left: 260px;
+  margin-left: -16px;
+  background-position: -8px -318px!important;
+}
+.middle1 {
+  position: relative;
+  left: 70px;
+  background-position: 0px -70px!important;
+}
+.middle2 {
+  position: relative;
+  left: 120px;
+  background-position: 0px -140px!important;
+}
+.bottom-right {
+  position: relative;
+  left: 180px;
+  margin-left: -16px;
+  background-position: 0px -210px!important;
+}
+#container {
+  width: 100%;
+  height: 460px;
+}
+ul {
+  list-style: none;
+}
+
+/* detail page main content css */
+#wrapper {
+  width: 100%;
+  height: 460px;
+  margin: 0px;
+  padding: 0px;
+}
