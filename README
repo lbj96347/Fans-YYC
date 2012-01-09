@@ -1,0 +1,10 @@
+关于友情演出应用
+
+基于html5+phonegap开发的手机应用程式，方便乐迷随时浏览最新的演出动态。同时结合演出拓展相关移动互联网业务。
+
+友演出的官方网站是：http://www.youyanchu.com/
+
+本程序使用框架为：
+  iscroll
+  jquery
+  phonegap
