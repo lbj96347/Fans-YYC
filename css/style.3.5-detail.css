@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: black;
+  background: #999;
 }
 h1,h2,h3,h4,h5,h6,p,ul,li {
   margin: 0px;
@@ -10,6 +10,15 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 .round8 {
   -webkit-border-radius: 8px;
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 3px black;
+}
+.transparent {
+  background: rgba(0,0,0,0.5);
+}
+.relative {
+  position: relative;
 }
 .align-center {
   text-align: center;
@@ -62,8 +71,35 @@ ul {
 
 /* detail page main content css */
 #wrapper {
-  width: 100%;
+  width: 320px;
   height: 460px;
   margin: 0px;
   padding: 0px;
+  color: white;
+}
+.show-message {
+  width: 220px;
+  height: 50px;
+  top: 8px;
+  left: 40px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.show-Miscellaneou {
+  width: 240px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  top: 18px;
+  left: 40px;
+}
+#single-bottom-bar {
+  width: 240px;
+  height: 50px;
+  top: 310px;
+  left: 40px;
+  text-align: center;
+  line-height: 50px;
 }
