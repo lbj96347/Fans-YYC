@@ -8,14 +8,14 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   margin: 0px;
   padding: 0px;
 }
-.round8 {
-  -webkit-border-radius: 8px;
+.round5 {
+  -webkit-border-radius: 5px;
 }
 .box-shadow {
   -webkit-box-shadow: 0px 0px 3px black;
 }
 .transparent {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
 }
 .relative {
   position: relative;
@@ -105,6 +105,7 @@ ul {
   text-align: center;
   z-index: 10;
   -webkit-border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px black;
   border: 2px solid white;
 }
 .show-Miscellaneou {
@@ -121,14 +122,61 @@ ul {
 }
 .free-note {
   -webkit-border-radius: 5px;
-  padding: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: white;
-  font-size: 12px!important;
+  font-size: 11px!important;
   background: rgb(255,151,0);
   margin-left: 50px;
 }
+/* show detail explain */
+#show-detail {
+  width: 240px;
+  height: 260px;
+  top: 1px;
+  left: 40px;
+  font-size: 12px;
+}
+.message-box {
+  padding: 6px;
+}
+.title {
+  float: left;
+  width: 60px;
+}
+/* message box icons */
+.message-box-icon {
+  padding-left: 15px;
+  padding-top: 3px;
+  background: url(../images/tool/message-box-icons.png);
+  margin: 5px;
+}
+.time-icon {
+  background-position: 0px -16px!important;
+}
+.type-icon {
+  background-position: 0px -34px!important;
+}
+.scale-icon {
+  background-position: 0px -50px!important;
+}
+.cha-icon {
+  background-position: 0px -67px!important;
+}
+.price-icon {
+  background-position: 0px -84px!important;
+}
+.explain-icon {
+  background-position: 0px -100px!important;
+}
+
+.message-box-text {
+  width: 160px;
+  margin-left: 60px;
+}
+
+
 #single-bottom-bar {
   width: 240px;
   height: 50px;
@@ -161,7 +209,7 @@ ul {
 #loader {
   width: 240px;
   height: 4px;
-  background: #fafafa;
+  background: #333;
   top: 440px;
   left: 40px;
 }

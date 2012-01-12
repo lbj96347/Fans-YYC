@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: black;
+  background: url(../images/tool/flower-background.png);
 }
 h1,h2,h3,h4,h5,h6,p,ul,li {
   margin: 0px;
@@ -10,6 +10,9 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 .round8 {
   -webkit-border-radius: 8px;
+}
+.absolute {
+  position: absolute;
 }
 .align-center {
   text-align: center;
@@ -135,7 +138,6 @@ ul {
   width: 300px;
   /* 此处为固定数值，适应屏幕大小的时候修改 */
   position: relative;
-
   left: 5px;
   top: 20px;
   font-size: 15px;
@@ -145,12 +147,83 @@ ul {
 
 /* part of button list */ 
 #float-button {
-  position: absolute;
-  bottom: 20px;
+  top: 410px;
   color: white;
 }
 #float-button a {
   padding-left: 35px;
   padding-top: 15px;
   background: url(../images/tool/home-1.png);
+}
+
+/* select menu style */
+#select-menu {
+  width: 255px;
+  height: 340px;
+  top: 60px;
+  left: 20px;
+  z-index: 10;
+  color: white;
+  background: url(../images/tool/select-bar.png) no-repeat;
+}
+#shade {
+  width: 320px;
+  height: 460px;
+  z-index: 9;
+  top: 0px;
+  left: 0px;
+  /* background: rgba(0,0,0,0.5);
+   */
+}
+#select-icon {
+  float: left;
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+}
+#select-icon p {
+  background: url(../images/tool/select-bar-icons-min.png) no-repeat;
+}
+#select-icon p {
+  margin-top: 40px;
+  padding-left: 35px;
+  padding-top: 26px;
+  text-align: center;
+}
+/* select icon style */
+.select-location {
+  background-position: 0px -112px!important;
+}
+.select-type {
+  background-position: 0px -56px!important;
+}
+.select-show {
+  background-position: 0px -170px!important;
+}
+
+/* select icon style */
+#select-text {
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+#select-text p {
+  width: 190px;
+  height: 50px;
+  color: black;
+  background: rgb(237,237,237);
+  text-align: center;
+  line-height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.select-content-left {
+  float:left;
+  margin-left: 15px;
+}
+.select-content-right {
+  float: right;
+  margin-right: 15px;
 }
