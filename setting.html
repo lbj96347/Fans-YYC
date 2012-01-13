@@ -24,31 +24,36 @@
   <div id='wrapper'>
 
     <!-- 个人展示 -->
-    <div id='avatar'>
+    <div id='avatar' class='limit vertical-spacing'>
       <div id='icon-part'></div>
-      <div id='person-message'>
-        <p id='name'><span>name</span><span>sex</span></p>
-        <p id='city'><span>hong kong</span><span>修改头像</span></p>
-        <p id='text'><span>hong kong is in china</span></p>
-      </div>
+      <p id='name'><span class='horizontal-spacing'>name</span><span class='horizontal-spacing'>sex</span></p>
+      <p id='city'><span class='horizontal-spacing px12'>城市：佛山</span><span class='horizontal-spacing' id='edit-avatar'>修改头像</span></p>
+      <p id='text' class='horizontal-spacing px12'>盖亚魔力首席苦逼设计师，一年都黑都好鬼苦逼的啊哈，嘻嘻，呵呵</p>
     </div>
 
     <!-- 修改资料按钮 -->
-    <div id='message'>
+    <div id='message' class='limit round8 setting-span vertical-spacing'>
       <p><span>基本资料</span></p>
+      <div class='black-line'></div>
       <p><span>我的门票</span></p>
     </div>
 
     <!-- 修改推送方式按钮 -->
-    <div id='setting-button'>
+    <div id='setting-button' class='limit vertical-spacing '>
       <h3>演出提醒设置</h3>
-      <div id='button-frame'>
-        <p><span>已经购买的演出</span>
-           <span>短信</span><span>推送</span><span>E-mail</span>
-        </p>
+      <div id='button-frame' class='setting-span round8'>
         <p>
-           <span>已经收藏的演出</span>
-           <span>短信</span><span>推送</span><span>E-mail</span>
+          <span>已购买演出</span>
+          <span class='setting-icon-style email'></span>
+          <span class='setting-icon-style push'></span>
+          <span class='setting-icon-style message'></span>
+        </p>
+        <div class='black-line'></div>
+        <p>
+           <span>已收藏演出</span>
+           <span class='setting-icon-style email'></span>
+           <span class='setting-icon-style push'></span>
+           <span class='setting-icon-style message'></span>
         </p>
       </div>
     </div>

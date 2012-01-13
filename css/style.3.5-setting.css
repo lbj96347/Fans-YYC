@@ -2,8 +2,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: black;
-  color: white;
 }
 h1,h2,h3,h4,h5,h6,p,ul,li {
   margin: 0px;
@@ -28,5 +26,116 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   text-align: center;
   vertical-align: middle;
 }
+.limit {
+  width: 93%;
+  margin: auto auto;
+}
+.setting-span {
+  background: rgb(42,42,42);
+}
+.vertical-spacing {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.horizontal-spacing {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.px12 {
+  font-size: 12px;
+}
+.black-line {
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+.setting-icon-style {
+  float: right;
+  margin-top: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../images/tool/notice-icons.png) no-repeat;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+h3 {
+  margin-bottom: 5px;
+}
 
 /* the main content part */
+header {
+  width: 100%;
+  height: 32px;
+  color: white;
+  line-height: 32px;
+}
+#back {
+  background: url(../images/tool/home-1.png) no-repeat;
+  background-position: -8px -280px;
+  padding-left: 20px;
+}
+#page-name {
+  left: 100px;
+}
+
+.container {
+  width: 100%;
+  height: 460px;
+}
+
+/* avatar part style */
+#icon-part {
+  float: left;
+  width: 75px;
+  height: 75px;
+  background: url(../images/icons/icon.jpeg);
+}
+#edit-avatar {
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgb(42,42,42);
+  -webkit-border-radius: 5px;
+  border-top: 1px solid #666;
+  -webkit-box-shadow: 0px 0px 1px black;
+  color: white;
+  position: relative;
+  font-size: 14px;
+  left: 30px;
+  bottom: 10px;
+}
+#avatar p {
+  margin-left: 75px;
+}
+#text {
+  width: 200px;
+  margin-left: 85px!important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* message edit part */
+#message {
+  margin-top: 30px;
+}
+#message p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting-button */
+#setting-button p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting icon list */
+.email {
+}
