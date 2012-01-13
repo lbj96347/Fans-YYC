@@ -1,0 +1,32 @@
+/* public style here */
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  color: white;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0px;
+  padding: 0px;
+}
+.round8 {
+  -webkit-border-radius: 8px;
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 3px black;
+}
+.transparent {
+  background: rgba(0,0,0,0.8);
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* the main content part */
