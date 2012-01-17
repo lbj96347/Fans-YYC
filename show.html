@@ -10,14 +10,15 @@
     <title>演出列表-友演出-歌迷应用-开发</title>
     <link rel='stylesheet' type='text/css' href='css/style.3.5-show.css' />
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
+    <script type='text/javascript' language='javascript' src='js/libs/iscroll.js'></script>
   </head>
     <body>
       <div id='container'>
         <!-- top carousel part -->
-        <section id='playbill' class='round8'>
+        <section id='playbill' class='round8 absolute'>
           <section id='picture'>
             <p id='playbill-button-list'>
-              <a class='playbill-button left'></a>
+              <a class='playbill-button left' id='test'></a>
               <a class='playbill-button middle'></a>
               <a class='playbill-button right'></a>
             </p>
@@ -29,7 +30,7 @@
         </section>
 
         <!-- scroller part -->
-        <div id='wrapper'>
+        <div id='wrapper' class='absolute'>
           <div id='scroller'>
             <ul class='showList'>
               <!-- show item -->
@@ -118,9 +119,11 @@
 
         <!-- button list part -->
         <div id='float-button' class='absolute'>
-          <a class='left' id='plus-button'></a>
-          <a class='middle1' id='collect-button'></a>
-          <a class='middle2' id='setting-button'></a>
+          <a id='test-button'>
+            <a class='left' id='plus-button'></a>
+            <a class='middle1' id='collect-button'></a>
+            <a class='middle2' id='setting-button'></a>
+          </a>
           <a class='bottom-right' id='more-button'></a>
         </div>
 
@@ -162,4 +165,12 @@
 
       </div>
     </body>
+    <!-- set up the iscoll -->
+    <script type='text/javascript' language='javascript'>
+      var myScroll;
+      function loaded() {
+        myScroll = new iScroll('wrapper');
+      }
+      document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
 </html>
