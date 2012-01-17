@@ -11,23 +11,27 @@
     <link rel='stylesheet' type='text/css' href='css/style.3.5-show.css' />
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/libs/iscroll.js'></script>
+    <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'></script>
   </head>
     <body>
       <div id='container'>
         <!-- top carousel part -->
+        <!-- the swipe view part -->
         <section id='playbill' class='round8 absolute'>
-          <section id='picture'>
-            <p id='playbill-button-list'>
-              <a class='playbill-button left' id='test'></a>
-              <a class='playbill-button middle'></a>
-              <a class='playbill-button right'></a>
-            </p>
-            <!-- message of the show -->
-            <p id='playbill-bar'>
-              <span class='left'>This is a music concert!</span>
-            </p>
+          <section id='nav'>
+            <ul style='float:left;'>
+              <li id="prev" onclick="gallery.prev()">-</li>
+              <li class="selected" onclick="gallery.goToPage(0)"></li>
+              <li onclick="gallery.goToPage(1)"></li>
+              <li onclick="gallery.goToPage(2)"></li>
+              <li onclick="gallery.goToPage(3)"></li>
+              <li onclick="gallery.goToPage(4)"></li>
+              <li onclick="gallery.goToPage(5)"></li>
+              <li id="next" onclick="gallery.next()">+</li>
+            </ul>
           </section>
         </section>
+        <!-- the swipe view part -->
 
         <!-- scroller part -->
         <div id='wrapper' class='absolute'>
@@ -119,11 +123,9 @@
 
         <!-- button list part -->
         <div id='float-button' class='absolute'>
-          <a id='test-button'>
-            <a class='left' id='plus-button'></a>
-            <a class='middle1' id='collect-button'></a>
-            <a class='middle2' id='setting-button'></a>
-          </a>
+          <a class='left' id='plus-button'></a>
+          <a class='middle1' id='collect-button'></a>
+          <a class='middle2' id='setting-button'></a>
           <a class='bottom-right' id='more-button'></a>
         </div>
 
@@ -173,4 +175,6 @@
       }
       document.addEventListener('DOMContentLoaded', loaded, false);
     </script>
+    <!-- set up the swipe view -->
+    <script type='text/javascript' language='javascript' src='js/swipeItem.js'></script>
 </html>
