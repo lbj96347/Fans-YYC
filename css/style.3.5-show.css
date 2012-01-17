@@ -262,23 +262,23 @@ ul {
 #nav {
   position:absolute;
   z-index:100;
-  top:8px;
-  width:200px;
-  height:20px;
-  left:50%;
-  background:rgba(0,0,0,0.75);
+  top: 172px;
+  width:160px;
+  height:16px;
+  right: 0;
+  text-align: center;
+  background:rgba(0,0,0,0);
   padding:0;
-  margin:0 0 0 -100px;
   -webkit-border-radius:10px;
 }
 
 #nav li {
   display:block;
   float:left;
-  width:14px;
-  height:14px; line-height:14px;
-  -webkit-border-radius:7px;
-  background:rgba(255,255,255,0.1);
+  width:8px;
+  height:8px; line-height:8px;
+  -webkit-border-radius:4px;
+  background:rgba(255,255,255,0.5);
   overflow:hidden;
   padding:0;
   margin:3px 11px 0 0;
@@ -296,7 +296,7 @@ ul {
 }
 
 #nav li.selected {
-  background:rgba(255,255,255,0.4);
+  background:rgba(255,255,255,0.8);
 }
 
 #swipeview-slider > div {
@@ -310,7 +310,6 @@ ul {
 
 #swipeview-slider img {
   display:block;
-  border:5px solid #eee;
   -webkit-box-shadow:0 2px 6px #000;
   -webkit-border-radius:2px;
   -webkit-transition-duration:.4s;
@@ -324,11 +323,9 @@ ul {
   bottom:0;
   left:0;
   width:100%;
-  padding:20px 0;
+  padding: 6px 6px;
   display:block;
   background:rgba(0,0,0,0.75);
-  font-size:20px;
-  text-align:center;
   text-shadow:0 1px 0 #000;
   border-top:1px solid rgba(255,255,255,0.2);
   -webkit-border-top-left-radius:10px;

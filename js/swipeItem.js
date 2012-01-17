@@ -10,37 +10,37 @@ var gallery,
       img: 'images/pic01.jpg',
       width: 300,
       height: 164,
-      desc: 'Piazza del Duomo, Florence, Italy'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
       img: 'images/pic02.jpg',
       width: 300,
       height: 164,
-      desc: 'Tuscan Landscape'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
       img: 'images/pic03.jpg',
       width: 300,
       height: 164,
-      desc: 'Colosseo, Rome, Italy'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
       img: 'images/pic04.jpg',
       width: 300,
       height: 164,
-      desc: 'Somewhere near Chinatown, San Francisco'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
       img: 'images/pic05.jpg',
       width: 300,
       height: 164,
-      desc: 'Medieval guard tower, Asciano, Siena, Italy'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
       img: 'images/pic06.jpg',
       width: 300,
       height: 164,
-      desc: 'Leaning tower, Pisa, Italy'
+      desc: '马家龙2012农村演唱会！（最多20个字）'
     }
   ];
 
