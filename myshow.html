@@ -11,16 +11,17 @@
 <meta name='author' content='' >
 <title>友演出-项目-歌迷应用-收藏页面</title>
 <link rel='stylesheet' type='text/css' href='css/style.3.5-myshow.css' />
+<script type='text/javascript' src='js/libs/iscroll.js' ></script>
 <body>
-  <header class='transparent'>
+  <header class='transparent absolute'>
     <span id='back'></span>
     <span id='page-name' class='relative'>我的门票</span>
   </header>
   <!-- show a select bar -->
 
   <!-- the main content -->
-  <div id='wrapper'>
-    <div id='scroller'>
+  <div id='wrapper' class='absolute'>
+    <div id='scroller' class='absolute'>
 
       <!-- show item -->
       <div class='myshow-item round8'>
@@ -66,12 +67,50 @@
         </p>
       </div>
       <!-- show item -->
-
-
+      <!-- show item -->
+      <div class='myshow-item round8'>
+        <p class='show-title'>很开心啊有演唱会很开心啊很开心</p>
+        <p class='show-detail'>
+          <span>11-12-31</span>
+          <span>佛山</span>
+          <span>验票码</span><span>254978CDE</span>
+          <span class='status'>已使用</span>
+        </p>
+      </div>
+      <!-- show item -->
+      <!-- show item -->
+      <div class='myshow-item round8'>
+        <p class='show-title'>很开心啊有演唱会很开心啊很开心</p>
+        <p class='show-detail'>
+          <span>11-12-31</span>
+          <span>佛山</span>
+          <span>验票码</span><span>254978CDE</span>
+          <span class='status'>已使用</span>
+        </p>
+      </div>
+      <!-- show item -->
+      <!-- show item -->
+      <div class='myshow-item round8'>
+        <p class='show-title'>很开心啊有演唱会很开心啊很开心</p>
+        <p class='show-detail'>
+          <span>11-12-31</span>
+          <span>佛山</span>
+          <span>验票码</span><span>254978CDE</span>
+          <span class='status'>已使用</span>
+        </p>
+      </div>
+      <!-- show item -->
 
 
     </div>
   </div>
 
 </body>
+<script>
+var myScroll;
+function loaded() {
+  myScroll = new iScroll('wrapper');
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
 </html>

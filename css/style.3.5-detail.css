@@ -80,6 +80,14 @@ ul {
   padding: 0px;
   color: white;
 }
+#back-button {
+  padding-top: 16px;
+  background: url(../images/tool/home-1.png) no-repeat;
+  background-position: -12px -280px;
+  padding-left: 14px;
+  top: 8px;
+  left: 12px;
+}
 .single-show {
   width: 320px;
   height: 460px;
@@ -98,6 +106,20 @@ ul {
   width: 32px;
   height: 32px;
   background: black;
+  top: -15px;
+  left: 255px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 10;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px black;
+  border: 2px solid white;
+}
+#collect-press:hover {
+  width: 32px;
+  height: 32px;
+  background: blue;
   top: -15px;
   left: 255px;
   font-size: 24px;
@@ -194,15 +216,27 @@ ul {
   background-position: -15px 0px;
 }
 /* 详细页面底部按钮 */
+#gallery-button:hover {
+  background-position: -16px -30px!important;
+}
 #map-button {
   background-position: -15px -60px!important;
+}
+#map-button:hover {
+  background-position: -15px -90px!important;
 }
 #share-button {
   background-position: -15px -120px!important;
 }
+#share-button:hover {
+  background-position: -15px -150px!important;
+}
 #buy-button {
   background-position: 0px -180px!important;
   padding-left: 65px!important;
+}
+#buy-button:hover {
+  background-position: 0px -210px!important;
 }
 
 /* 详细页面底部按钮 */
@@ -212,4 +246,18 @@ ul {
   background: #333;
   top: 440px;
   left: 40px;
+}
+
+
+/* the animation created by css3 */
+@-webkit-keyframes fadeIn {
+  0% {
+  opacity: 0; 
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
 }

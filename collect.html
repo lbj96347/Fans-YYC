@@ -10,7 +10,9 @@
 <meta name='description' content='' >
 <meta name='author' content='' >
 <title>友演出-项目-歌迷应用-收藏页面</title>
+<script type='text/javascript' src='js/libs/iscroll.js'></script>
 <link rel='stylesheet' type='text/css' href='css/style.3.5-collect.css' />
+</head>
 <body>
   <header>
     <span id='back'></span>
@@ -20,11 +22,29 @@
 
 
   <!-- the main content -->
-  <div id='wrapper'>
-    <div id='scroller'>
+  <div id='wrapper' class='absolute'>
+    <div id='scroller' class='absolute'>
 
-              <!-- show item -->
-              <ul class='showList'>
+             <!-- show item -->
+             <ul class='showList'>
+               <li class='round8'>
+                <div class='mini-playbill'>
+                </div>
+                <div class='show-message'>
+                  <p class='show-Miscellaneous'>
+                    <span class='show-date'>时间</span>
+                    <span class='show-local'>地点</span>
+                    <span class='show-type'>曲风</span>
+                    <span class='show-kind'>类型</span>
+                    <span class='free-note'>Free</span>
+                  </p>
+                  <p class='show-text'>This show is for Chinese Chinese</p>
+                </div>
+              </li>
+            </ul>
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
               <li class='round8'>
                 <div class='mini-playbill'>
                 </div>
@@ -40,9 +60,9 @@
                 </div>
               </li>
             </ul>
-              <!-- show item -->
-              <!-- show item -->
-              <ul class='showList'>
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
               <li class='round8'>
                 <div class='mini-playbill'>
                 </div>
@@ -58,9 +78,9 @@
                 </div>
               </li>
             </ul>
-              <!-- show item -->
-              <!-- show item -->
-              <ul class='showList'>
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
               <li class='round8'>
                 <div class='mini-playbill'>
                 </div>
@@ -76,9 +96,9 @@
                 </div>
               </li>
             </ul>
-              <!-- show item -->
-              <!-- show item -->
-              <ul class='showList'>
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
               <li class='round8'>
                 <div class='mini-playbill'>
                 </div>
@@ -94,13 +114,53 @@
                 </div>
               </li>
             </ul>
-              <!-- show item -->
-
-
-
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
+              <li class='round8'>
+                <div class='mini-playbill'>
+                </div>
+                <div class='show-message'>
+                  <p class='show-Miscellaneous'>
+                    <span class='show-date'>时间</span>
+                    <span class='show-local'>地点</span>
+                    <span class='show-type'>曲风</span>
+                    <span class='show-kind'>类型</span>
+                    <span class='free-note'>Free</span>
+                  </p>
+                  <p class='show-text'>This show is for Chinese Chinese</p>
+                </div>
+              </li>
+            </ul>
+            <!-- show item -->
+            <!-- show item -->
+            <ul class='showList'>
+              <li class='round8'>
+                <div class='mini-playbill'>
+                </div>
+                <div class='show-message'>
+                  <p class='show-Miscellaneous'>
+                    <span class='show-date'>时间</span>
+                    <span class='show-local'>地点</span>
+                    <span class='show-type'>曲风</span>
+                    <span class='show-kind'>类型</span>
+                    <span class='free-note'>Free</span>
+                  </p>
+                  <p class='show-text'>This show is for Chinese Chinese</p>
+                </div>
+              </li>
+            </ul>
+            <!-- show item -->
 
     </div>
   </div>
 
 </body>
+<script>
+  var myScroll;
+  function loaded() {
+      myScroll = new iScroll('wrapper');
+    }
+    document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
 </html>

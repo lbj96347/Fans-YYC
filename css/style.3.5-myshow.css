@@ -33,6 +33,9 @@ header {
   width: 100%;
   height: 32px;
   line-height: 32px;
+  top: 0;
+  left: 0;
+  z-index: 2;
   color: white;
 }
 #back {
@@ -44,9 +47,23 @@ header {
   left: 100px;
 }
 
+/* wrapper part and scroller */
+#wrapper {
+  z-index:1;
+  top:32px; bottom:0px; left:0;
+  width:100%;
+  overflow:auto;
+}
+
+#scroller {
+  z-index:1;
+/*  -webkit-touch-callout:none;*/
+  width:100%;
+  padding:0;
+}
+
 /* show item style */
 .myshow-item {
-  width: 93%;
   border: 1px solid #999;
   margin: auto auto;
   margin-top: 10px;

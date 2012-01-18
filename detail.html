@@ -14,12 +14,13 @@
 <body>
   <div id='wrapper'>
     <div id='scroller'>
+      <a id='back-button' class='absolute'></a>
       <section class='single-show'>
         <section class='show-message round5 box-shadow transparent relative'>
           <p>顶你个肺部啊顶你个肺部</p>
         </section>
         <section id='collect-press' class='relative'>★</section>
-        <section class='show-Miscellaneou round5 box-shadow transparent relative'>
+        <section class='show-Miscellaneou round5 box-shadow transparent relative' id='show-Miscellaneou'>
           <p>
             <span class='show-date'>11-12-31</span>
             <span class='show-local'>佛山</span>
@@ -129,4 +130,11 @@
     </div>
   </div>
 </body>
+<script>
+  $(document).ready(function(){
+    $('#show-Miscellaneou').click(function(){
+      $('#show-detail').fadeTo('slow','0')
+    });
+  });
+</script>
 </html>

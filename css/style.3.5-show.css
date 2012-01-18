@@ -79,7 +79,7 @@ ul {
 }
 #playbill-button-list {
   width: 320px;
-  position: relative;
+  position: absolute;
   top: 5px;
 }
 .playbill-button {
