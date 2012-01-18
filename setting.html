@@ -8,7 +8,9 @@
   <meta name='description' content='' />
   <meta name='author' content='' />
   <title>友演出项目-设置页面-开发</title>
+  <link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.min.css' />
   <link rel='stylesheet' type='text/css' href='css/style.3.5-setting.css' />
+  <script type='text/javasctipt' src='js/libs/jquery.mobile-1.0.min.js'></script>
 </head>
 <body>
   <!-- the web page background -->
@@ -16,7 +18,7 @@
 
   <!-- top nav bar -->
   <header class='transparent'>
-  <span id='back' onclick="function(){window.location='detail.html';}"></span>
+    <a href='detail.html' id='back'></a>
     <span id='page-name' class='relative'>设置</span>
   </header>
 
@@ -64,4 +66,9 @@
   </div>
 
 </body>
+<script>
+  function toDetail(){
+    window.location='detail.html';
+  }
+</script>
 </html>
