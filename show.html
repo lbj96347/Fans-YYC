@@ -8,20 +8,23 @@
     <meta name='description' content='' >
     <meta name='author' content='' >
     <title>演出列表-友演出-歌迷应用-开发</title>
-    <link rel='stylesheet' type='text/css' href='css/style.3.5-show.css' />
-    <link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.min.css' />
+    <link rel='stylesheet' type='text/css' href='css/style.3.5.css' />
+    <link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.css' />
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/libs/jquery.mobile-1.0.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/libs/iscroll.js'></script>
-    <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'></script>
   </head>
     <body>
-      <div id='container'>
+      <!-- 动态加载js以及图片 -->
+      <div id='load-js'></div>
+      <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'>
+      </script>
+      <div id='container' class='showList-con show-list-back'>
         <!-- top carousel part -->
         <!-- the swipe view part -->
         <section id='playbill' class='round8 absolute'>
-          <p id='playbill-button-list'>
-            <a class='playbill-button left' id='test'></a>
+          <p id='playbill-button-list' style='z-index:999;'>
+            <a class='playbill-button left' id='test' href='index.html'></a>
             <a class='playbill-button middle'></a>
             <a class='playbill-button right'></a>
           </p>
@@ -42,7 +45,7 @@
         <!-- the swipe view part -->
 
         <!-- scroller part -->
-        <div id='wrapper' class='absolute'>
+        <div id='wrapper' class='absolute show-wrapper'>
           <div id='scroller'>
             <ul class='showList'>
               <!-- show item -->

@@ -446,12 +446,12 @@ Built by David Kaneda and maintained by Jonathan Stark.
 .ui-btn { display: block; text-align: center; cursor:pointer;  position: relative; margin: .5em 5px; padding: 0; }
 .ui-header .ui-btn, .ui-footer .ui-btn, .ui-bar .ui-btn { display: inline-block; font-size: 13px; margin: 0; }
 .ui-btn-inline { display: inline-block; }
-.ui-btn-inner { padding: .6em 25px; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; position: relative; zoom: 1; }
+.ui-btn-inner { padding: .6em 25px; display: none; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; position: relative; zoom: 1; }
 .ui-btn input, .ui-btn button { z-index: 2; }
 .ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-bar .ui-btn-inner { padding: .4em 8px .5em; }
 .ui-btn-icon-notext { width: 24px; height: 24px; }
 .ui-btn-icon-notext .ui-btn-inner { padding: 2px 1px 2px 3px; }
-.ui-btn-text { position: relative; z-index: 1; }
+.ui-btn-text { position: relative; z-index: 1; display: none; }
 .ui-btn-icon-notext .ui-btn-text { position: absolute; left: -9999px; }
 .ui-btn-icon-left .ui-btn-inner { padding-left: 33px; }
 .ui-header .ui-btn-icon-left .ui-btn-inner,
@@ -492,7 +492,7 @@ Built by David Kaneda and maintained by Jonathan Stark.
 .ui-bar .ui-btn-icon-bottom .ui-icon { bottom: 4px; }
 
 /*hiding native button,inputs */
-.ui-btn-hidden { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-appearance: button; opacity: .1; cursor: pointer; background: #fff; background: rgba(255,255,255,0); filter: Alpha(Opacity=.0001); font-size: 1px; border: none; line-height: 999px; }
+.ui-btn-hidden {  }
 .ui-collapsible { margin: .5em 0; }
 .ui-collapsible-heading { font-size: 16px; display: block; margin: 0 -8px; padding: 0; border-width: 0 0 1px 0; position: relative; }
 .ui-collapsible-heading a { text-align: left; margin: 0;  }
@@ -589,14 +589,14 @@ Built by David Kaneda and maintained by Jonathan Stark.
 @-moz-document url-prefix() {.ui-select .ui-btn select { opacity: 0.0001; }}
 .ui-select .ui-btn select.ui-select-nativeonly { opacity: 1; text-indent: 0; }
 
-.ui-select .ui-btn-icon-right .ui-btn-inner { padding-right: 45px; } 
+.ui-select .ui-btn-icon-right .ui-btn-inner { padding-right: 45px; display: none; } 
 .ui-select .ui-btn-icon-right .ui-icon { right: 15px;  }
 
 /* labels */
 label.ui-select { font-size: 16px; line-height: 1.4;  font-weight: normal; margin: 0 0 .3em; display: block; }
 
 /*listbox*/
-.ui-select .ui-btn-text, .ui-selectmenu .ui-btn-text { display: block; min-height: 1em; overflow: hidden; }
+.ui-select .ui-btn-text, .ui-selectmenu .ui-btn-text { display: none; min-height: 1em; overflow: hidden; }
 .ui-select .ui-btn-text { text-overflow: ellipsis; }
 
 .ui-selectmenu { position: absolute; padding: 0; z-index: 1100 !important; width: 80%; max-width: 350px; padding: 6px; }
@@ -616,7 +616,7 @@ label.ui-select { font-size: 16px; line-height: 1.4;  font-weight: normal; margi
 
 /* when no placeholder is defined in a multiple select, the header height doesn't even extend past the close button.  this shim's content in there */
 .ui-selectmenu .ui-header h1:after { content: '.'; visibility: hidden; }label.ui-input-text { font-size: 16px; line-height: 1.4; display: block; font-weight: normal; margin: 0 0 .3em; }
-input.ui-input-text, textarea.ui-input-text { background-image: none; padding: .4em; line-height: 1.4; font-size: 16px; display: block; width: 97%; }
+input.ui-input-text, textarea.ui-input-text { background-image: none; display: block; }
 input.ui-input-text { -webkit-appearance: none; }
 textarea.ui-input-text { height: 50px; -webkit-transition: height 200ms linear; -moz-transition: height 200ms linear; -o-transition: height 200ms linear; transition: height 200ms linear; }
 .ui-input-search { padding: 0 30px; background-image: none; position: relative; }

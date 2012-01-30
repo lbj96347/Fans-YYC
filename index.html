@@ -9,21 +9,24 @@
     <meta name='author' content='' >
     <title>友演出-歌迷应用-开发</title>
     <link rel='stylesheet' type='text/css' href='css/style.3.5.css' />
+    <link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.css' />
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
+    <script type='text/javascript' language='javascript' src='js/libs/jquery.mobile-1.0.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/app.js'></script>
+    <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'></script>
   </head>
     <body>
-    <div id='container'>
+    <div id='container' class='landing-page'>
       <header>
       <!-- app logo insert -->
-      <a id='app-logo' onclick='javascript:toShowList();'></a>
+      <a id='app-logo' href='show.html'></a>
       <!-- app preview button/right side -->
       </header>
 
-      <div id='wrapper'>
+      <div class='index-wrapper'>
         <form id='login' name='login' method='post' action='#'>
-          <p><input class='account-input round8' type='email' name='email' placeholder='帐号'/></p>
-          <p><input class='account-input round8' type='password' name='password' placeholder='密码' /></p>
+          <p><input id='email' class='account-input round8' type='email' name='email' placeholder='帐号'/></p>
+          <p><input id='password' class='account-input round8' type='password' name='password' placeholder='密码' /></p>
           <p><input class='account-button round8' type='submit' value='登陆' name='signin'  /></p>
           <p><button class='account-button round8' >注册</button></p>
         </form>
@@ -34,5 +37,21 @@
       <a id='company'></a>
       </footer>
     </div>
+    <!-- test the swipe view -->
+    <div id='playbill' style='display:none;'>
+      <section id='nav'>
+         <ul style='float:left;'>
+           <li id="prev" onclick="gallery.prev()">-</li>
+           <li class="selected" onclick="gallery.goToPage(0)"></li>
+           <li onclick="gallery.goToPage(1)"></li>
+           <li onclick="gallery.goToPage(2)"></li>
+           <li onclick="gallery.goToPage(3)"></li>
+           <li onclick="gallery.goToPage(4)"></li>
+           <li onclick="gallery.goToPage(5)"></li>
+           <li id="next" onclick="gallery.next()">+</li>
+         </ul>
+      </section>
+    </div>
     </body>
+    <script type='text/javascript' language='javascript' src='js/swipeItem.js'></script>
 </html>
