@@ -1,5 +1,9 @@
-/* public style here basic frame*/
-body {margin: 0px;padding: 0px;}
+/* 
+ *
+ * public style here basic frame
+ *
+ * */
+body {margin: 0px;padding: 0px;background: black;}
 .round8 {  -webkit-border-radius: 8px;}
 .round5 {  -webkit-border-radius: 5px;}
 .absolute {position: absolute;}
@@ -19,8 +23,15 @@ h1,h2,h3,h4,h5,h6,p,ul,li {  margin: 0px;padding: 0px;list-style: none;}
 .middle {position: relative;left: 140px;margin-left: -16px;background-position: -8px -300px!important;}
 .right {position: relative;left: 260px;margin-left: -16px;background-position: -8px -318px!important;}
 .middle1 {position: relative;left: 70px;background-position: 0px -70px!important;}
+.middle1:hover {background-position: 0px -105px!important;}
 .middle2 {position: relative;left: 120px;background-position: 0px -140px!important;}
+.middle2:hover {background-position: 0px -175px!important;}
 .bottom-right {position: relative;left: 180px;margin-left: -16px;background-position: 0px -210px!important;}
+.bottom-right:hover {background-position: 0px -245px!important;}
+.header-bar {width: 100%;height: 32px;color:white;line-height:32px;}
+.back-button {background: url(../images/tool/home-1.png) no-repeat;background-position: -8px -280px;padding-left: 20px;}
+.page-name {left:100px;}
+.scroller {width: 100%;z-index:1;padding: 0;}
 
 /* login page style */
 .landing-page {
@@ -156,19 +167,19 @@ footer {
   line-height: 24px;
 }
 
-/* part of scroller */
+/* 
+ *
+ * part of scroller 
+ * in this part some code like show-wrapper/showList/mini-playbill are the same in the collect.html page 
+ * 
+ * */
+
 .show-wrapper {
   width: 320px;
   top: 192px;
   bottom: 0;
   overflow: auto;
   z-index: 1;
-}
-#scroller {
-  position:absolute; 
-  z-index: 1;
-  width:100%;
-  padding:0;
 }
 .showList li {
   width: 100%;
@@ -226,11 +237,11 @@ footer {
   width: 320px;
   height: 32px;
   line-height: 48px;
+  z-index: 12;
 }
 #float-button a {
   padding-left: 35px;
   padding-top: 16px;
-  z-index: 12;
   background: url(../images/tool/home-1.png);
 }
 
@@ -271,6 +282,9 @@ footer {
   text-align: center;
 }
 /* select icon style */
+.select-time {
+  background-position: 0px -30px!important; 
+}
 .select-location {
   background-position: 0px -112px!important;
 }
@@ -601,21 +615,24 @@ footer {
   top: 440px;
   left: 40px;
 }
-
-/* the animation created by css3 */
-@-webkit-keyframes fadeIn {
-  0% {
-  opacity: 0; 
-  }
-  50% {
-  opacity: 0;
-  }
-  100% {
-  opacity: 1;
-  }
-}
 /*
  *
  * detail page style *
  *
  */
+
+
+/*
+ *
+ * the collection page style*
+ *
+ *
+ */
+.collect-wrapper {
+  width: 100%;
+  z-index: 1;
+  top: 32px;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}
