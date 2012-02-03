@@ -810,3 +810,57 @@ footer {
   -webkit-border-radius: 5px;
   -webkit-box-shadow: 0px 0px 1px black;
 }
+/*
+ *
+ * album page style 
+ *
+ */
+.album-contain {
+  background: url(../images/Penguin.jpg);
+}
+.album-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.album-title {
+  width: 75%;
+  height: 30px;
+  margin: auto auto;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.album-name {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.pic-num {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.surface {
+  width: 240px;
+  height: 320px;
+  margin: auto auto;
+}
+.photoframe {
+  width: 210px;
+  height: 310px;
+  margin: auto auto;
+  padding-top: 10px;
+  background: url(../images/example-photo.png) no-repeat;
+  background-size: 210px 310px;
+  background-position: center;
+}
+
+.loader {
+  width: 240px;
+  height: 4px;
+  background: #666;
+  margin: auto auto;
+  margin-top: 20px;
+}
