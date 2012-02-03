@@ -10,9 +10,15 @@ body {margin: 0px;padding: 0px;background: black;}
 .relative {position: relative;}
 .align-center {text-align: center;vertical-align: middle;}
 h1,h2,h3,h4,h5,h6,p,ul,li {  margin: 0px;padding: 0px;list-style: none;}
-#container { width: 100%;height: 460px;}
+h3 {margin-bottom: 5px;}
+#container { width: 100%;height:480px;}
 .transparent {background: rgba(0,0,0,0.8);}
 .box-shadow {-webkit-box-shadow: 0px 0px 3px black;}
+.limit {  width: 93%;margin: auto auto;}
+.vertical-spacing {margin-top: 20px;margin-bottom: 20px;}
+.horizontal-spacing {margin-left: 10px;margin-right: 10px;}
+.black-line {width:100%;height: 1px;background: black;}
+.spacing {width: 100%;height:30px;}
 /* 
  *
  * public style for tool bars 
@@ -28,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {  margin: 0px;padding: 0px;list-style: none;}
 .middle2:hover {background-position: 0px -175px!important;}
 .bottom-right {position: relative;left: 180px;margin-left: -16px;background-position: 0px -210px!important;}
 .bottom-right:hover {background-position: 0px -245px!important;}
-.header-bar {width: 100%;height: 32px;color:white;line-height:32px;}
+.header-bar {width: 100%;height: 32px!important;color:white;line-height:32px;text-align:left!important;}
 .back-button {background: url(../images/tool/home-1.png) no-repeat;background-position: -8px -280px;padding-left: 20px;}
 .page-name {left:100px;}
 .scroller {width: 100%;z-index:1;padding: 0;}
@@ -635,4 +641,111 @@ footer {
   left: 0;
   bottom: 0;
   overflow: auto;
+}
+/*
+ *
+ * the collection page style*
+ *
+ *
+ */
+
+/* 
+ *
+ * the setting page style *
+ *
+ */
+.setting-span {background: rgb(42,42,42);}
+.px12 {font-size: 12px;}
+.setting-page-background {background: url(../images/tool/setting-background.png);margin-bottom:30px;}
+/* avatar part style */
+#avatar {
+  color: black;
+}
+#avatar p {
+  margin-left: 75px;
+}
+.sex-property {
+  background-position: 0px -127px!important;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../images/tool/notice-icons.png) no-repeat;
+  padding-left: 20px;
+}
+#icon-part {
+  float: left;
+  width: 75px;
+  height: 75px;
+  background: url(../images/icons/icon.jpeg);
+}
+#edit-avatar {
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgb(42,42,42);
+  -webkit-border-radius: 5px;
+  border-top: 1px solid #666;
+  -webkit-box-shadow: 0px 0px 1px black;
+  color: white;
+  position: relative;
+  font-size: 14px;
+  left: 30px;
+  bottom: 10px;
+}
+#text {
+  width: 200px;
+  margin-left: 85px!important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* message edit part */
+#message {
+  margin-top: 30px;
+}
+#message p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting-button */
+#setting-button h3 {
+  color: black;
+}
+#setting-button p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting icon list */
+.setting-icon-style {
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../images/tool/notice-icons.png) no-repeat;
+  padding-left: 20px;
+  padding-top: 13px;
+}
+.message {background-position: 0px -80px;  margin-top: 8px;padding-top: 25px;}
+.message:hover {background-position: 0px -105px;}
+.push {
+  background-position: 0px -30px;  
+  margin-top: 8px;
+  padding-top: 25px;
+}
+.push:hover {
+  background-position: 0px -55px;  
+}
+.email {
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.email:hover {
+  background-position: 0px -15px;  
 }
