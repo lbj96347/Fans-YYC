@@ -749,3 +749,43 @@ footer {
 .email:hover {
   background-position: 0px -15px;  
 }
+
+/*
+ *
+ * myshow page style 
+ *
+ *
+ */
+.myshow-wrapper { 
+  z-index:1;
+  top:32px; bottom:0px; left:0;
+  width:100%;
+  overflow:auto;
+}
+.myshow-item {
+  border: 1px solid #999;
+  margin: auto auto;
+  margin-top: 10px;
+  text-align: center;
+  background: white;
+}
+.myshow-item p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.show-detail {
+  font-size: 12px;
+}
+.show-detail span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.status {
+  color: red;
+}
+/*
+*
+* myshow page style 
+*
+*
+*/

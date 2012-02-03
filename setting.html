@@ -9,17 +9,17 @@
   <meta name='author' content='' />
   <title>友演出项目-设置页面-开发</title>
   <link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.min.css' />
-  <link rel='stylesheet' type='text/css' href='css/style.3.5-setting.css' />
+  <link rel='stylesheet' type='text/css' href='css/style.3.5.css' />
   <script type='text/javasctipt' src='js/libs/jquery.mobile-1.0.min.js'></script>
 </head>
 <body>
   <!-- the web page background -->
-  <div class='container'>
+  <div class='container setting-page-background'>
 
   <!-- top nav bar -->
-  <header class='transparent'>
-    <a href='detail.html' id='back'></a>
-    <span id='page-name' class='relative'>设置</span>
+  <header class='transparent header-bar'>
+    <a href='detail.html' id='back' class='back-button'></a>
+    <span id='page-name' class='relative page-name'>设置</span>
   </header>
 
   <!-- main content and show the album list -->
@@ -28,7 +28,7 @@
     <!-- 个人展示 -->
     <div id='avatar' class='limit vertical-spacing'>
       <div id='icon-part'></div>
-      <p id='name'><span class='horizontal-spacing'>name</span><span class='horizontal-spacing'>sex</span></p>
+      <p id='name'><span class='horizontal-spacing'>name</span><span class='horizontal-spacing sex-property'></span></p>
       <p id='city'><span class='horizontal-spacing px12'>城市：佛山</span><span class='horizontal-spacing' id='edit-avatar'>修改头像</span></p>
       <p id='text' class='horizontal-spacing px12'>盖亚魔力首席苦逼设计师，一年都黑都好鬼苦逼的啊哈，嘻嘻，呵呵</p>
     </div>
@@ -59,6 +59,8 @@
         </p>
       </div>
     </div>
+
+    <div class='spacing'></div>
 
   </div>
 
