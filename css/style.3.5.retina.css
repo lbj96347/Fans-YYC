@@ -1,0 +1,866 @@
+/* 
+ *
+ * public style here basic frame
+ *
+ * */
+body {margin: 0px;padding: 0px;background: black;}
+.round8 {  -webkit-border-radius: 8px;}
+.round5 {  -webkit-border-radius: 5px;}
+.absolute {position: absolute;}
+.relative {position: relative;}
+.align-center {text-align: center;vertical-align: middle;}
+h1,h2,h3,h4,h5,h6,p,ul,li {  margin: 0px;padding: 0px;list-style: none;}
+h3 {margin-bottom: 5px;}
+#container { width: 100%;height:480px;}
+.transparent {background: rgba(0,0,0,0.8);}
+.box-shadow {-webkit-box-shadow: 0px 0px 3px black;}
+.limit {  width: 93%;margin: auto auto;}
+.vertical-spacing {margin-top: 20px;margin-bottom: 20px;}
+.horizontal-spacing {margin-left: 10px;margin-right: 10px;}
+.black-line {width:100%;height: 1px;background: black;}
+.spacing {width: 100%;height:30px;}
+/* 
+ *
+ * public style for tool bars 
+ *
+ * 
+ * */
+.left { position: relative;left: 20px;}
+.middle {position: relative;left: 140px;margin-left: -16px;background-position: -8px -300px!important;}
+.right {position: relative;left: 260px;margin-left: -16px;background-position: -8px -318px!important;}
+.middle1 {position: relative;left: 70px;background-position: 0px -70px!important;}
+.middle1:hover {background-position: 0px -105px!important;}
+.middle2 {position: relative;left: 120px;background-position: 0px -140px!important;}
+.middle2:hover {background-position: 0px -175px!important;}
+.bottom-right {position: relative;left: 180px;margin-left: -16px;background-position: 0px -210px!important;}
+.bottom-right:hover {background-position: 0px -245px!important;}
+.header-bar {width: 100%;height: 32px!important;color:white;line-height:32px;text-align:left!important;}
+.back-button {background: url(../images/tool/home-1.png) no-repeat;background-position: -8px -280px;padding-left: 20px;}
+.page-name {left:100px;}
+.scroller {width: 100%;z-index:1;padding: 0;}
+
+/* login page style */
+.landing-page {
+  background-image: url(../images/landing-background.png);
+}
+header {
+  margin: auto auto;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  color: white;
+}
+#app-logo {
+  background: url(../images/LOGO.png) no-repeat;
+  line-height: 90px;
+  padding: 26px;
+  padding-left: 84px;
+  padding-right: 84px;
+}
+/* header style */
+/* main content style */
+.index-wrapper {
+  text-align: center;
+  width: 100%;
+  height: 280px;
+  margin: auto auto;
+}
+.index-wrapper form {
+  padding-top: 10px;
+  margin: auto auto;
+}
+.index-wrapper p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.account-input {
+  width: 220px;
+  height: 30px;
+  margin: auto auto;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px #333 inset;
+}
+.account-button {
+  border: 0px;
+  width: 240px;
+  height: 50px;
+  margin: auto auto;
+  line-height: 50px;
+  font-size: 24px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 1px black;
+  border-top: 1px solid #999;
+  text-shadow: 0px -1px black;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0.0, rgb(72,72,72)),
+      color-stop(0.9, rgb(52,52,52))
+      );
+}
+.account-button:hover {
+  -webkit-box-shadow: 0px 0px 1px rgb(235,111,0);
+  border-top: 1px solid rgb(255,218,0);
+  text-shadow: 0px -1px black;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0.0, rgb(255,177,0)),
+      color-stop(0.9, rgb(255,143,0))
+      );
+}
+/* footer style */
+footer {
+  margin: auto auto;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  color: white;
+}
+#company {
+  background: url(../images/company-logo.png) no-repeat;
+  line-height: 90px;
+  padding: 26px;
+  padding-left: 44px;
+}
+
+
+/*
+ *
+ * show list page style *
+ *
+ *
+ */
+/* part of playbill */
+.show-list-back {
+  background: url(../images/tool/flower-background.png);
+}
+#playbill {
+  width: 100%;
+  height: 192px;
+  top: 0;
+  left: 0;
+  color: white;
+  /*
+  background: url(../images/test-playbill-white.jpg) no-repeat;
+  */
+  background-color: black;
+}
+#playbill-button-list {
+  width: 320px;
+  position: absolute;
+  top: 5px;
+}
+.playbill-button {
+  background: url(../images/tool/home-1.png) no-repeat;
+  background-position: -8px -280px;
+  padding-left: 20px;
+}
+#playbill-bar {
+  position: relative;
+  top: 150px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+#playbill-bar span {
+  line-height: 24px;
+}
+
+/* 
+ *
+ * part of scroller 
+ * in this part some code like show-wrapper/showList/mini-playbill are the same in the collect.html page 
+ * 
+ * */
+
+.show-wrapper {
+  width: 320px;
+  top: 192px;
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+}
+.showList li {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid white;
+  background: rgb(245,245,245);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.mini-playbill {
+  margin-left: 10px; 
+  margin-top: 10px; 
+  width: 45px;
+  height: 60px;
+  background: url(../images/test-playbill.jpg) no-repeat;
+  float: left;
+}
+.show-Miscellaneous {
+  width: 300px;
+  /* 此处为固定数值，适应屏幕大小的时候修改 */
+  font-size: 10px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  vertical-align: middle;
+}
+.show-Miscellaneous span {
+  margin-right: 5px
+}
+.free-note {
+  -webkit-border-radius: 5px;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: white;
+  font-size: 12px!important;
+  background: rgb(255,151,0);
+  margin-left: 10px;
+}
+.show-text {
+  width: 300px;
+  /* 此处为固定数值，适应屏幕大小的时候修改 */
+  position: relative;
+  left: 5px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+
+/* part of button list */ 
+#float-button {
+  bottom: 20px;
+  color: white;
+  width: 320px;
+  height: 32px;
+  line-height: 48px;
+  z-index: 12;
+}
+#float-button a {
+  padding-left: 35px;
+  padding-top: 16px;
+  background: url(../images/tool/home-1.png);
+}
+
+/* select menu style */
+#select-menu {
+  width: 255px;
+  height: 340px;
+  top: 60px;
+  left: 20px;
+  z-index: 10;
+  color: white;
+  display: none;
+  background: url(../images/tool/select-bar.png) no-repeat;
+}
+#shade {
+  width: 320px;
+  height: 460px;
+  z-index: 9;
+  display: none;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.5);
+}
+#select-icon {
+  float: left;
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+}
+#select-icon p {
+  background: url(../images/tool/select-bar-icons-min.png) no-repeat;
+}
+#select-icon p {
+  margin-top: 40px;
+  padding-left: 35px;
+  padding-top: 26px;
+  text-align: center;
+}
+/* select icon style */
+.select-time {
+  background-position: 0px -30px!important; 
+}
+.select-location {
+  background-position: 0px -112px!important;
+}
+.select-type {
+  background-position: 0px -56px!important;
+}
+.select-show {
+  background-position: 0px -170px!important;
+}
+
+/* select icon style */
+#select-text {
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+#select-text p {
+  width: 190px;
+  height: 50px;
+  color: black;
+  background: rgb(237,237,237);
+  text-align: center;
+  line-height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.select-content-left {
+  float:left;
+  margin-left: 15px;
+}
+.select-content-right {
+  float: right;
+  margin-right: 15px;
+}
+
+
+/* the swipe part */
+#playbill {
+  width:100%;
+  min-width:320px;
+  height: 192px;
+}
+
+#nav {
+  position:absolute;
+  z-index:100;
+  top: 172px;
+  width:160px;
+  height:16px;
+  right: 0;
+  text-align: center;
+  background:rgba(0,0,0,0);
+  padding:0;
+  -webkit-border-radius:10px;
+}
+
+#nav li {
+  display:block;
+  float:left;
+  width:8px;
+  height:8px; line-height:8px;
+  -webkit-border-radius:4px;
+  background:rgba(255,255,255,0.5);
+  overflow:hidden;
+  padding:0;
+  margin:3px 11px 0 0;
+  text-align:center;
+}
+
+#nav li#prev {
+  margin-left:5px;
+  background:transparent;
+}
+
+#nav li#next {
+  margin-right:0;
+  background:transparent;
+}
+
+#nav li.selected {
+  background:rgba(255,255,255,0.8);
+}
+
+#swipeview-slider > div {
+  position:relative;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  overflow:hidden;
+}
+
+#swipeview-slider img {
+  display:block;
+  -webkit-box-shadow:0 2px 6px #000;
+  -webkit-border-radius:2px;
+  -webkit-transition-duration:.4s;
+  -webkit-transition-property:opacity;
+  opacity:1;
+  pointer-events:none;
+}
+
+#swipeview-slider span {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding: 6px 6px;
+  display:block;
+  background:rgba(0,0,0,0.75);
+  text-shadow:0 1px 0 #000;
+  border-top:1px solid rgba(255,255,255,0.2);
+  -webkit-border-top-left-radius:10px;
+  -webkit-border-top-right-radius:10px;
+  -webkit-transition-duration:.3s;
+  -webkit-transition-property:-webkit-transform;
+  -webkit-transform:translate3d(0,100%,0);
+}
+
+#swipeview-slider .swipeview-active span {
+  -webkit-transform:translate3d(0,0,0);
+}
+
+#playbill > div > .swipeview-loading {
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#555)),
+    -webkit-gradient(linear, 0 0, 100% 0, from(#777), to(#777));
+  background-position:50% 50%, 50% 50%;
+  background-size:200px 140px, 210px 150px;
+  background-repeat:no-repeat;
+}
+
+#playbill > div > .swipeview-loading img,
+#swipeview-slider img.loading {
+  -webkit-transition-duration:0;
+  opacity:0;
+}
+
+#playbill > div > .swipeview-loading span {
+  -webkit-transition-duration:0;
+  -webkit-transform:translate3d(0,100%,0);
+}
+/*
+ *
+ * show list page style *
+ *
+ *
+ */
+
+
+/*
+ *
+ * detail page style *
+ *
+ */
+/* detail page main content css */
+.detail-wrapper {
+  width: 320px;
+  height: 460px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+#back-button {
+  padding-top: 16px;
+  background: url(../images/tool/home-1.png) no-repeat;
+  background-position: -12px -280px;
+  padding-left: 14px;
+  top: 8px;
+  left: 12px;
+}
+.single-show {
+  width: 320px;
+  height: 460px;
+  background: url(../images/Penguin.jpg) no-repeat;
+}
+.show-message {
+  width: 220px;
+  height: 50px;
+  top: 8px;
+  left: 40px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#collect-press {
+  width: 32px;
+  height: 32px;
+  background: black;
+  top: -15px;
+  left: 255px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 10;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px black;
+  border: 2px solid white;
+}
+#collect-press:hover {
+  width: 32px;
+  height: 32px;
+  background: blue;
+  top: -15px;
+  left: 255px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 10;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px black;
+  border: 2px solid white;
+}
+.show-Miscellaneou {
+  width: 240px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  top: -5px;
+  left: 40px;
+}
+.show-Miscellaneous span {
+  margin-right: 5px
+}
+.free-note {
+  -webkit-border-radius: 5px;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-size: 11px!important;
+  background: rgb(255,151,0);
+  margin-left: 50px;
+}
+/* show detail explain */
+#show-detail {
+  width: 240px;
+  height: 260px;
+  top: 1px;
+  left: 40px;
+  font-size: 12px;
+}
+.message-box {
+  padding: 6px;
+}
+.title {
+  float: left;
+  width: 60px;
+}
+/* message box icons */
+.message-box-icon {
+  padding-left: 15px;
+  padding-top: 3px;
+  background: url(../images/tool/message-box-icons.png);
+  margin: 5px;
+}
+.time-icon {
+  background-position: 0px -16px!important;
+}
+.type-icon {
+  background-position: 0px -34px!important;
+}
+.scale-icon {
+  background-position: 0px -50px!important;
+}
+.cha-icon {
+  background-position: 0px -67px!important;
+}
+.price-icon {
+  background-position: 0px -84px!important;
+}
+.explain-icon {
+  background-position: 0px -100px!important;
+}
+
+.message-box-text {
+  width: 160px;
+  margin-left: 60px;
+}
+
+
+#single-bottom-bar {
+  width: 240px;
+  height: 50px;
+  top: 380px;
+  left: 40px;
+  text-align: center;
+  line-height: 60px;
+}
+#single-bottom-bar span {
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: url(../images/tool/single-page-cut.png) no-repeat;
+  background-position: -15px 0px;
+}
+/* 详细页面底部按钮 */
+#gallery-button:hover {
+  background-position: -16px -30px!important;
+}
+#map-button {
+  background-position: -15px -60px!important;
+}
+#map-button:hover {
+  background-position: -15px -90px!important;
+}
+#share-button {
+  background-position: -15px -120px!important;
+}
+#share-button:hover {
+  background-position: -15px -150px!important;
+}
+#buy-button {
+  background-position: 0px -180px!important;
+  padding-left: 65px!important;
+}
+#buy-button:hover {
+  background-position: 0px -210px!important;
+}
+
+/* 详细页面底部按钮 */
+#loader {
+  width: 240px;
+  height: 4px;
+  background: #333;
+  top: 440px;
+  left: 40px;
+}
+/*
+ *
+ * detail page style *
+ *
+ */
+
+
+/*
+ *
+ * the collection page style*
+ *
+ *
+ */
+.collect-wrapper {
+  width: 100%;
+  z-index: 1;
+  top: 32px;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}
+/*
+ *
+ * the collection page style*
+ *
+ *
+ */
+
+/* 
+ *
+ * the setting page style *
+ *
+ */
+.setting-span {background: rgb(42,42,42);}
+.px12 {font-size: 12px;}
+.setting-page-background {background: url(../images/tool/setting-background.png);margin-bottom:30px;}
+/* avatar part style */
+#avatar {
+  color: black;
+}
+#avatar p {
+  margin-left: 75px;
+}
+.sex-property {
+  background-position: 0px -127px!important;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../images/tool/notice-icons.png) no-repeat;
+  padding-left: 20px;
+}
+#icon-part {
+  float: left;
+  width: 75px;
+  height: 75px;
+  background: url(../images/icons/icon.jpeg);
+}
+#edit-avatar {
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgb(42,42,42);
+  -webkit-border-radius: 5px;
+  border-top: 1px solid #666;
+  -webkit-box-shadow: 0px 0px 1px black;
+  color: white;
+  position: relative;
+  font-size: 14px;
+  left: 30px;
+  bottom: 10px;
+}
+#text {
+  width: 200px;
+  margin-left: 85px!important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* message edit part */
+#message {
+  margin-top: 30px;
+}
+#message p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting-button */
+#setting-button h3 {
+  color: black;
+}
+#setting-button p {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+
+/* setting icon list */
+.setting-icon-style {
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: url(../images/tool/notice-icons.png) no-repeat;
+  padding-left: 20px;
+  padding-top: 13px;
+}
+.message {background-position: 0px -80px;  margin-top: 8px;padding-top: 25px;}
+.message:hover {background-position: 0px -105px;}
+.push {
+  background-position: 0px -30px;  
+  margin-top: 8px;
+  padding-top: 25px;
+}
+.push:hover {
+  background-position: 0px -55px;  
+}
+.email {
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.email:hover {
+  background-position: 0px -15px;  
+}
+
+/*
+ *
+ * myshow page style 
+ *
+ *
+ */
+.myshow-contain {
+  width: 100%;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  background: url(../images/tool/setting-background.png);
+}
+.myshow-wrapper { 
+  z-index:1;
+  top:32px; bottom:0px; left:0;
+  width:100%;
+  overflow:auto;
+}
+.myshow-item {
+  border: 1px solid #999;
+  margin: auto auto;
+  margin-top: 10px;
+  text-align: center;
+  background: white;
+}
+.myshow-item p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.show-detail {
+  font-size: 12px;
+}
+.show-detail span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.status {
+  color: red;
+}
+/*
+*
+* myshow page style 
+*
+*
+*/
+/*
+ *
+ * map page style 
+ *
+ */
+#line {
+  left: 200px;
+  font-size: 12px;
+  padding: 5px;
+  background: #333;
+  border-top: 1px solid #111;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 1px black;
+}
+/*
+ *
+ * album page style 
+ *
+ */
+.album-contain {
+  background: url(../images/Penguin.jpg);
+}
+.album-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.album-title {
+  width: 75%;
+  height: 30px;
+  margin: auto auto;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.album-name {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.pic-num {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.surface {
+  width: 240px;
+  height: 320px;
+  margin: auto auto;
+}
+.photoframe {
+  width: 210px;
+  height: 310px;
+  margin: auto auto;
+  padding-top: 10px;
+  background: url(../images/example-photo.png) no-repeat;
+  background-size: 210px 310px;
+  background-position: center;
+}
+
+.loader {
+  width: 240px;
+  height: 4px;
+  background: #666;
+  margin: auto auto;
+  margin-top: 20px;
+}
