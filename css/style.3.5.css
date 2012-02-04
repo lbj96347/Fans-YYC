@@ -28,12 +28,14 @@ h3 {margin-bottom: 5px;}
 .left { position: relative;left: 20px;}
 .middle {position: relative;left: 140px;margin-left: -16px;background-position: -8px -300px!important;}
 .right {position: relative;left: 260px;margin-left: -16px;background-position: -8px -318px!important;}
-.middle1 {position: relative;left: 70px;background-position: 0px -70px!important;}
-.middle1:hover {background-position: 0px -105px!important;}
-.middle2 {position: relative;left: 120px;background-position: 0px -140px!important;}
-.middle2:hover {background-position: 0px -175px!important;}
-.bottom-right {position: relative;left: 180px;margin-left: -16px;background-position: 0px -210px!important;}
-.bottom-right:hover {background-position: 0px -245px!important;}
+.left1 { position: relative;left: 20px;}
+.left1:hover { background-position: 0px -36px!important;}
+.middle1 {position: relative;left: 70px;background-position: 0px -72px!important;}
+.middle1:hover {background-position: 0px -108px!important;}
+.middle2 {position: relative;left: 120px;background-position: 0px -144px!important;}
+.middle2:hover {background-position: 0px -180px!important;}
+.bottom-right {position: relative;left: 180px;margin-left: -16px;background-position: 0px -216px!important;}
+.bottom-right:hover {background-position: 0px -252px!important;}
 .header-bar {width: 100%;height: 32px!important;color:white;line-height:32px;text-align:left!important;}
 .back-button {background: url(../images/tool/home-1.png) no-repeat;background-position: -8px -280px;padding-left: 20px;}
 .page-name {left:100px;}
@@ -41,7 +43,7 @@ h3 {margin-bottom: 5px;}
 
 /* login page style */
 .landing-page {
-  background-image: url(../images/landing-background.png);
+  background-image: url(../images/tool/setting-background.png);
 }
 header {
   margin: auto auto;
@@ -51,7 +53,8 @@ header {
   color: white;
 }
 #app-logo {
-  background: url(../images/LOGO.png) no-repeat;
+  background: url(../images/tool/retina/landing-page-logo-@2.png) no-repeat;
+  background-size: 160px 70px;
   line-height: 90px;
   padding: 26px;
   padding-left: 84px;
@@ -123,7 +126,8 @@ footer {
   color: white;
 }
 #company {
-  background: url(../images/company-logo.png) no-repeat;
+  background: url(../images/tool/retina/company-icon@2.png) no-repeat;
+  background-size: 73px 52px;
   line-height: 90px;
   padding: 26px;
   padding-left: 44px;
@@ -150,6 +154,9 @@ footer {
   background: url(../images/test-playbill-white.jpg) no-repeat;
   */
   background-color: black;
+}
+#playbill span {
+  font-size: 12px;
 }
 #playbill-button-list {
   width: 320px;
@@ -181,7 +188,7 @@ footer {
  * */
 
 .show-wrapper {
-  width: 320px;
+  width: 100%;
   top: 192px;
   bottom: 0;
   overflow: auto;
@@ -248,7 +255,8 @@ footer {
 #float-button a {
   padding-left: 35px;
   padding-top: 16px;
-  background: url(../images/tool/home-1.png);
+  background: url(../images/tool/retina/home-page-nav-bar.png);
+  background-size: 34px 349px; 
 }
 
 /* select menu style */
@@ -728,7 +736,8 @@ footer {
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  background: url(../images/tool/notice-icons.png) no-repeat;
+  background: url(../images/tool/retina/setting-page-icon@2.png) no-repeat;
+  background-size: 19px 175px;
   padding-left: 20px;
   padding-top: 13px;
 }
