@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name='description' content='' >
+    <meta name='author' content='' >
+    <title>友演出-歌迷应用-开发</title>
+    <link rel='stylesheet' type='text/css' href='../../css/style.3.5.css' />
+    <link rel='stylesheet' type='text/css' href='../../css/jquery.mobile.structure-1.0.min.css' />
+    <script type='text/javascript' language='javascript' src='../libs/jquery-1.7.min.js'></script>
+    <script type='text/javascript' language='javascript' src='../libs/jquery.mobile-1.0.min.js'></script>
+  </head>
+<body>
+  <script type='text/javascript' language='javascript' src='../libs/swipeview.js'></script>
+  <div id='wrapper'>
+  </div>
+</body>
+<script>
+  $(document).ready(function(){
+    $('#show-Miscellaneou').click(function(){
+      $('#show-detail').fadeTo('slow','0')
+    });
+  });
+  function toSetting(){
+    window.location='setting.html';
+  }
+</script>
+<script type='text/javascript' language='javascript' src='single.js'></script>
+</html>

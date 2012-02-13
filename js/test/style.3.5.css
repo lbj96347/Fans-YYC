@@ -151,7 +151,6 @@ footer {
 }
 #playbill {
   width: 100%;
-  min-width:320px;
   height: 192px;
   top: 0;
   left: 0;
@@ -347,7 +346,7 @@ footer {
   height: 192px;
 }
 
-#navBar {
+#nav {
   position:absolute;
   z-index:100;
   top: 172px;
@@ -460,7 +459,7 @@ footer {
  */
 /* detail page main content css */
 .detail-wrapper {
-  width: 100%;
+  width: 320px;
   height: 460px;
   margin: 0px;
   padding: 0px;
@@ -476,25 +475,25 @@ footer {
   left: 12px;
 }
 .single-show {
-  width: 100%;
+  width: 320px;
   height: 460px;
-  background: url(../images/Penguin.jpg);
+  background: url(../images/Penguin.jpg) no-repeat;
 }
 .show-message {
-  width: 75%;
+  width: 220px;
   height: 50px;
   top: 8px;
+  left: 40px;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: auto auto;
 }
 #collect-press {
   width: 32px;
   height: 32px;
   background: black;
   top: -15px;
-  left: 86%;
+  left: 255px;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -508,7 +507,7 @@ footer {
   height: 32px;
   background: blue;
   top: -15px;
-  left: 86%;
+  left: 255px;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -518,13 +517,13 @@ footer {
   border: 2px solid white;
 }
 .show-Miscellaneou {
-  width: 75%;
+  width: 240px;
   height: 20px;
   font-size: 10px;
   line-height: 20px;
   text-align: center;
   top: -5px;
-  margin: auto auto;
+  left: 40px;
 }
 .show-Miscellaneous span {
   margin-right: 5px
@@ -541,11 +540,11 @@ footer {
 }
 /* show detail explain */
 #show-detail {
-  width: 75%;
+  width: 240px;
   height: 260px;
   top: 1px;
+  left: 40px;
   font-size: 12px;
-  margin: auto auto;
 }
 .message-box {
   padding: 6px;
@@ -590,8 +589,7 @@ footer {
   width: 240px;
   height: 50px;
   top: 380px;
-  left: 50%;
-  margin-left: -120px;
+  left: 40px;
   text-align: center;
   line-height: 60px;
 }
@@ -618,8 +616,7 @@ footer {
   height: 4px;
   background: #333;
   top: 440px;
-  left: 50%;
-  margin-left: -120px;
+  left: 40px;
 }
 /*
  *

@@ -146,7 +146,7 @@ for (i=0; i<3; i++) {
           "</div>"+
         "</section>"+
       "</section>";
-  show.masterPage[i].appendChild(el)
+  show.masterPages[i].appendChild(el)
 }
 
 //快速滑动处理函数
