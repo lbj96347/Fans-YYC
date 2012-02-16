@@ -28,7 +28,7 @@
             <a class='playbill-button left' id='test' href='index.html'></a>
             <a class='playbill-button middle' id='slideButton1' ontouchstart='closePanel();'></a>
             <a class='playbill-button middle' id='slideButton2' style='display:none' ontouchstart='showPanel();'></a>
-            <a class='playbill-button right' ontouchstart='location.reload();'></a>
+            <a class='playbill-button right'></a>
           </p>
         <!-- the swipe view part -->
         <section id='playbill' class='round8 absolute'>
@@ -53,7 +53,7 @@
           <div id='scroller' class='scroller absolute'>
             <ul class='showList'>
               <!-- show item -->
-              <li class='round8' >
+              <li class='round8' onclick="window.location='detail.html'">
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>

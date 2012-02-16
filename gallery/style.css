@@ -1,0 +1,119 @@
+html, body { height:100%; }
+body {
+	padding:0;
+	margin:0;
+	background:#333;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	color:#eee;
+	font-family:helvetica;
+	font-size:12px;
+}
+
+#playbill {
+	width:100%;
+	min-width:320px;
+	height:100%;
+}
+
+#nav {
+	position:absolute;
+	z-index:100;
+	top:8px;
+	width:200px;
+	height:20px;
+	left:50%;
+	background:rgba(0,0,0,0.75);
+	padding:0;
+	margin:0 0 0 -100px;
+	-webkit-border-radius:10px;
+}
+
+#nav li {
+	display:block;
+	float:left;
+	width:14px;
+	height:14px; line-height:14px;
+	-webkit-border-radius:7px;
+	background:rgba(255,255,255,0.1);
+	overflow:hidden;
+	padding:0;
+	margin:3px 11px 0 0;
+	text-align:center;
+}
+
+#nav li#prev {
+	margin-left:5px;
+	background:transparent;
+}
+
+#nav li#next {
+	margin-right:0;
+	background:transparent;
+}
+
+#nav li.selected {
+	background:rgba(255,255,255,0.4);
+}
+
+#swipeview-slider > div {
+	position:relative;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	overflow:hidden;
+}
+
+#swipeview-slider img {
+	display:block;
+	border:5px solid #eee;
+	-webkit-box-shadow:0 2px 6px #000;
+	-webkit-border-radius:2px;
+	-webkit-transition-duration:.4s;
+	-webkit-transition-property:opacity;
+	opacity:1;
+	pointer-events:none;
+}
+
+#swipeview-slider span {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding:20px 0;
+	display:block;
+	background:rgba(0,0,0,0.75);
+	font-size:20px;
+	text-align:center;
+	text-shadow:0 1px 0 #000;
+	border-top:1px solid rgba(255,255,255,0.2);
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transform:translate3d(0,100%,0);
+}
+
+#swipeview-slider .swipeview-active span {
+	-webkit-transform:translate3d(0,0,0);
+}
+
+#playbill > div > .swipeview-loading {
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#555)),
+		-webkit-gradient(linear, 0 0, 100% 0, from(#777), to(#777));
+	background-position:50% 50%, 50% 50%;
+	background-size:200px 140px, 210px 150px;
+	background-repeat:no-repeat;
+}
+
+#playbill > div > .swipeview-loading img,
+#swipeview-slider img.loading {
+	-webkit-transition-duration:0;
+	opacity:0;
+}
+
+#playbill > div > .swipeview-loading span {
+	-webkit-transition-duration:0;
+	-webkit-transform:translate3d(0,100%,0);
+}

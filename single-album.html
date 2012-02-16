@@ -1,18 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
+<title>演出地图</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" href="iphon_tetris_icon.png"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<link rel="apple-touch-startup-image" href="startup.png" />
-<meta name='description' content='' >
-<meta name='author' content='' >
-<title>友演出项目-单个相册详情-所有图片列表-开发</title>
-<link rel='stylesheet' type='text/css' href='' />
-<script type='text/javascript' language='javascript' src=''></script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<link rel='stylesheet' href='css/style.3.5.css' type='text/css' />
+<link rel='stylesheet' type='text/css' href='css/jquery.mobile.structure-1.0.min.css' />
+<script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
+<script type='text/javascript' language='javascript' src='js/libs/jquery.mobile-1.0.min.js'></script>
+<script type='text/javascript' src='js/libs/iscroll.js' ></script>
 </head>
 <body>
+  <header class='header-bar transparent'>
+    <a id='back' class='back-button' href='detail.html'></a>
+    <span id='page-name' class='relative page-name'>相册</span>
+  </header>
+  <!-- album pics -->
+  <div id='wrapper' style='height: 320px;'>
+    <div id='scroller' style='height: 100%;'>
+      <div class='picGroup'>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+      </div>
+      <div class='picGroup'>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+        <div class='picItem'></div>
+      </div>
+
+    </div>
+  </div>
 </body>
+<script>
+var myScroll;
+function loaded() {
+  myScroll = new iScroll('wrapper');
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
 </html>
