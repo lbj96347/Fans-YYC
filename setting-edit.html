@@ -22,10 +22,10 @@
   width: 90%;
   margin: auto auto;
   top: 10px;
-  height: 160px;
 }
 #personMessage p {
-  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -36,11 +36,18 @@
   border: none;
   background: #333;
 }
+#personMessage textarea {
+  border: none;
+  background: #333;
+  width: 70%;
+  height: 70%;
+  float: right;
+}
 </style>
 <body>
   <header class='header-bar'>
     <a id='back' class='back-button' href='setting.html'></a>
-    <span id='page-name' class='relative page-name'>基本资料</span>
+    <span id='page-name' class='relative page-name'>资料</span>
   </header>
   <!-- show a select bar -->
 
@@ -49,9 +56,12 @@
     <div id='personMessage' >
       <form method='post' class='round8 relative'>
         <p><span>用户名</span><input type='text' /></p>
+        <div class='black-line'></div>
         <p><span>性别</span><input type='text' /></p>
+        <div class='black-line'></div>
         <p><span>所在城市</span><input type='text' /></p>
-        <p><span>简介</span><textarea type='text'></textarea></p>
+        <div class='black-line'></div>
+        <p style='height: 100px;'><span>简介</span><textarea type='text'></textarea></p>
       </form>
     </div>
   </div>

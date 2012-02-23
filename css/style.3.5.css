@@ -11,14 +11,23 @@ body {margin: 0px;padding: 0px;background: black;}
 .align-center {text-align: center;vertical-align: middle;}
 h1,h2,h3,h4,h5,h6,p,ul,li {  margin: 0px;padding: 0px;list-style: none;}
 h3 {margin-bottom: 5px;}
-#container { width: 100%;height:480px;}
+#container { width: 100%;height:460px;}
 .transparent {background: rgba(0,0,0,0.8);}
 .box-shadow {-webkit-box-shadow: 0px 0px 3px black;}
 .limit {  width: 93%;margin: auto auto;}
 .vertical-spacing {margin-top: 20px;margin-bottom: 20px;}
 .horizontal-spacing {margin-left: 10px;margin-right: 10px;}
-.black-line {width:100%;height: 1px;background: black;}
+.black-line {width:100%;background: black;border-top: 1px solid black;border-bottom: 1px solid #555;}
 .spacing {width: 100%;height:30px;}
+.enter {background: url(../images/tool/retina/setting-page-icon@2.png);
+  background-size: 19px 176px;
+  background-position: 0px -159px;
+  padding-left: 16px;
+  padding-top: 17px;
+  margin-top: 10px;
+  margin-right: 12px;
+  float: right;
+}
 a:link { text-decoration: none;color: white;}
 a:active { text-decoration:none;color: white;}
 a:hover { text-decoration:none;color: white;} 
@@ -43,14 +52,14 @@ a:visited { text-decoration: none;color: white;}
 .middle2:hover {background-position: 0px -180px!important;}
 .bottom-right {position: relative;left: 35px;margin-left: -16px;background-position: 0px -216px!important;}
 .bottom-right:hover {background-position: 0px -252px!important;}
-/* more-button-x */
+ /* more-button-x */
 #more-button-1 {position: relative;left: 35px;margin-left: -16px;background-position: 0px -216px!important;}
 #more-button-1:hover {background-position: 0px -252px!important;} 
 #more-button-2 {position: relative;left: 35px;margin-left: -16px;background-position: 0px -349px!important;}
 #more-button-2:hover {background-position: 0px -385px!important;}
-.header-bar {width: 100%;height: 32px!important;color:white;line-height:32px;text-align:left!important;}
-.back-button {background: url(../images/tool/retina/home-page-nav-bar.png) no-repeat;background-size:34px 421px;background-position: -8px -290px;padding-left: 20px;}
-.page-name {left:100px;}
+.header-bar {width: 100%;height: 32px!important;color:white;line-height:32px;text-align:left!important;border-bottom: 1px solid #999;-webkit-box-shadow: 0px 1px 1px black;}
+.back-button {background: url(../images/tool/retina/home-page-nav-bar.png) no-repeat;background-size:34px 421px;background-position: -8px -290px;padding-left: 20px;margin-left: 10px;}
+.page-name {left:105px;}
 .scroller {width: 100%;z-index:1;padding: 0;}
 
 /* login page style */
@@ -67,7 +76,7 @@ header {
 #app-logo {
   background: url(../images/tool/retina/landing-page-logo-@2.png) no-repeat;
   background-size: 160px 70px;
-  line-height: 90px;
+  line-height: 120px;
   padding: 26px;
   padding-left: 84px;
   padding-right: 84px;
@@ -86,6 +95,7 @@ header {
   padding-left: 40px;
   padding-top: 13px;
   top: 10px;
+  left: 0px;
 }
 #loginBack:hover {
   background-position: 0px 13px;
@@ -103,7 +113,7 @@ header {
   margin: auto auto;
 }
 .index-wrapper form {
-  padding-top: 10px;
+  padding-top: 30px;
   margin: auto auto;
 }
 .index-wrapper p {
@@ -118,7 +128,8 @@ header {
   font-size: 24px;
   padding: 10px;
   border: none;
-  -webkit-box-shadow: 0px 0px 5px #333 inset;
+  -webkit-box-shadow: 0px 0px 3px #333 inset;
+  border-bottom: 2px solid white;
 }
 .account-button {
   border: 0px;
@@ -128,8 +139,8 @@ header {
   line-height: 50px;
   font-size: 24px;
   color: white;
-  -webkit-box-shadow: 0px 0px 1px black;
-  border-top: 1px solid #999;
+  -webkit-box-shadow: 0px 1px 2px white inset;
+  border: 1px solid black;
   text-shadow: 0px -1px black;
   background-image: -webkit-gradient(
       linear,
@@ -179,15 +190,9 @@ footer {
   background: url(../images/tool/flower-background.png);
 }
 #playbill {
-  width: 100%;
-  min-width:320px;
-  height: 192px;
   top: 0;
   left: 0;
   color: white;
-  /*
-  background: url(../images/test-playbill-white.jpg) no-repeat;
-  */
   background-color: black;
 }
 #playbill span {
@@ -248,13 +253,20 @@ footer {
   background: url(../images/test-playbill.jpg) no-repeat;
   float: left;
 }
+.show-message {
+  width: 75%;
+  height: 50px;
+  top: 8px;
+  padding: 6px;
+  margin: auto auto;
+}
 .show-Miscellaneous {
   width: 300px;
   /* 此处为固定数值，适应屏幕大小的时候修改 */
   font-size: 10px;
   position: relative;
   left: 5px;
-  top: 10px;
+  top: 4px;
   vertical-align: middle;
 }
 .show-Miscellaneous span {
@@ -266,18 +278,22 @@ footer {
   padding-left: 6px;
   padding-right: 6px;
   color: white;
-  font-size: 12px!important;
+  font-size: 9px!important;
   background: rgb(255,151,0);
-  margin-left: 10px;
+  margin-left: 60px;
 }
 .show-text {
-  width: 300px;
+  width: 250px;
   /* 此处为固定数值，适应屏幕大小的时候修改 */
   position: relative;
   left: 5px;
-  top: 20px;
+  top: 14px;
   font-size: 15px;
   font-weight: 900;
+}
+.showItem:hover {
+  background: rgb(0,106,218);
+  border-top: 1px solid rgb(26,155,234);
 }
 
 
@@ -313,7 +329,7 @@ footer {
 }
 #shade {
   width: 100%;
-  height: 460px;
+  height: 480px;
   z-index: 9;
   top: 0px;
   left: 0px;
@@ -339,7 +355,7 @@ footer {
 }
 /* select icon style */
 .select-time:hover {background-position: 0px -28px!important; }
-.select-location {background-position: 0px -112px!important;}
+.select-location {background-position: 0px -113px!important;}
 .select-location:hover {background-position: 0px -140px!important;}
 .select-type {background-position: 0px -56px!important;}
 .select-type:hover {background-position: 0px -84px!important;}
@@ -382,9 +398,9 @@ footer {
 
 #navBar {
   position:absolute;
-  z-index:100;
+  z-index:9;
   top: 172px;
-  width:160px;
+  width:85px;
   height:16px;
   right: 0;
   text-align: center;
@@ -402,7 +418,7 @@ footer {
   background:rgba(255,255,255,0.5);
   overflow:hidden;
   padding:0;
-  margin:3px 11px 0 0;
+  margin:3px 6px 0 0;
   text-align:center;
 }
 
@@ -432,7 +448,7 @@ footer {
 #swipeview-slider img {
   display:block;
   -webkit-box-shadow:0 2px 6px #000;
-  -webkit-border-radius:2px;
+  -webkit-border-radius:10px;
   -webkit-transition-duration:.4s;
   -webkit-transition-property:opacity;
   opacity:1;
@@ -448,9 +464,9 @@ footer {
   display:block;
   background:rgba(0,0,0,0.75);
   text-shadow:0 1px 0 #000;
-  border-top:1px solid rgba(255,255,255,0.2);
-  -webkit-border-top-left-radius:10px;
-  -webkit-border-top-right-radius:10px;
+  -webkit-box-shadow: 0px 0px 5px black;
+  -webkit-border-bottom-left-radius:10px;
+  -webkit-border-bottom-right-radius:10px;
   -webkit-transition-duration:.3s;
   -webkit-transition-property:-webkit-transform;
   -webkit-transform:translate3d(0,100%,0);
@@ -513,64 +529,43 @@ footer {
   height: 460px;
   background: url(../images/Penguin.jpg);
 }
-.show-message {
+.show-description {
   width: 75%;
   height: 50px;
   top: 8px;
   padding: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin: auto auto;
 }
 #collect-press {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   background: black;
   top: -15px;
   left: 86%;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
   z-index: 10;
-  -webkit-border-radius: 20px;
+  -webkit-border-radius: 28px;
   -webkit-box-shadow: 0px 0px 2px black;
   border: 2px solid white;
 }
 #collect-press:hover {
-  width: 32px;
-  height: 32px;
   background: blue;
-  top: -15px;
-  left: 86%;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  z-index: 10;
-  -webkit-border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px black;
-  border: 2px solid white;
 }
 .show-Miscellaneou {
   width: 75%;
-  height: 20px;
+  height: 26px;
   font-size: 10px;
-  line-height: 20px;
+  line-height: 26px;
   text-align: center;
   top: -5px;
   margin: auto auto;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .show-Miscellaneous span {
   margin-right: 5px
-}
-.free-note {
-  -webkit-border-radius: 5px;
-  padding: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: white;
-  font-size: 11px!important;
-  background: rgb(255,151,0);
-  margin-left: 50px;
 }
 /* show detail explain */
 #show-detail {
@@ -579,10 +574,11 @@ footer {
   top: 1px;
   font-size: 12px;
   margin: auto auto;
+  padding-left: 6px;
+  padding-right: 6px;
+  overflow: scroll;
 }
-.message-box {
-  padding: 6px;
-}
+.message-box {padding: 10px;}
 .title {
   float: left;
   width: 60px;
@@ -697,44 +693,32 @@ footer {
 #avatar p {
   margin-left: 75px;
 }
-.sex-property {
-  background-position: 0px -127px!important;
-  margin-left: 5px;
-  margin-right: 5px;
-  background: url(../images/tool/notice-icons.png) no-repeat;
-  padding-left: 20px;
-}
 #icon-part {
   float: left;
   width: 75px;
   height: 75px;
   background: url(../images/icons/icon.jpeg);
-}
-#edit-avatar {
-  padding: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background: rgb(42,42,42);
-  -webkit-border-radius: 5px;
-  border-top: 1px solid #666;
-  -webkit-box-shadow: 0px 0px 1px black;
-  color: white;
-  position: relative;
-  font-size: 14px;
-  left: 30px;
-  bottom: 10px;
+  border: 1px solid #999;
 }
 #text {
-  width: 200px;
+  width: 210px;
   margin-left: 85px!important;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 10px;
+}
+#button-frame {
+  -webkit-box-shadow: 0px 0px 2px black;
 }
 
 
 /* message edit part */
+.menuItem:hover {
+  background-color: rgb(0,106,218);
+  -webkit-border-radius: 8px;
+}
 #message {
   margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 2px black;
 }
 #message p {
   padding-left: 10px;
@@ -759,8 +743,8 @@ footer {
 /* setting icon list */
 .setting-icon-style {
   float: right;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   background: url(../images/tool/retina/setting-page-icon@2.png) no-repeat;
   background-size: 19px 175px;
   padding-left: 20px;
@@ -768,21 +752,10 @@ footer {
 }
 .message {background-position: 0px -80px;  margin-top: 8px;padding-top: 25px;}
 .message:hover {background-position: 0px -105px;}
-.push {
-  background-position: 0px -30px;  
-  margin-top: 8px;
-  padding-top: 25px;
-}
-.push:hover {
-  background-position: 0px -55px;  
-}
-.email {
-  padding-top: 15px;
-  margin-top: 15px;
-}
-.email:hover {
-  background-position: 0px -15px;  
-}
+.push {background-position: 0px -30px;  margin-top: 8px;padding-top: 25px;}
+.push:hover {background-position: 0px -55px;  }
+.email {padding-top: 15px;margin-top: 15px;}
+.email:hover {background-position: 0px -15px;}
 
 /*
  *
@@ -792,7 +765,7 @@ footer {
  */
 .myshow-contain {
   width: 100%;
-  height: 480px;
+  height: 460px;
   margin: 0;
   padding: 0;
   background: url(../images/tool/setting-background.png);
@@ -830,20 +803,6 @@ footer {
 *
 *
 */
-/*
- *
- * map page style 
- *
- */
-#line {
-  left: 200px;
-  font-size: 12px;
-  padding: 5px;
-  background: #333;
-  border-top: 1px solid #111;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 1px black;
-}
 /*
  *
  * album page style 

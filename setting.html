@@ -28,30 +28,30 @@
     <!-- 个人展示 -->
     <div id='avatar' class='limit vertical-spacing'>
       <div id='icon-part'></div>
-      <p id='name'><span class='horizontal-spacing'>name</span><span class='horizontal-spacing' style='color:blue'>♂</span></p>
-      <p id='city'><span class='horizontal-spacing px12'>城市：佛山</span><span class='horizontal-spacing' id='edit-avatar'>修改头像</span></p>
+      <p id='name'><span class='horizontal-spacing'>name</span><span class='horizontal-spacing' style='color:blue;'>♂</span></p>
+      <p id='city'><span class='horizontal-spacing px12'>城市：佛山</span></p>
       <p id='text' class='horizontal-spacing px12'>盖亚魔力首席苦逼设计师，一年都黑都好鬼苦逼的啊哈，嘻嘻，呵呵</p>
     </div>
 
     <!-- 修改资料按钮 -->
     <div id='message' class='limit round8 setting-span vertical-spacing'>
-      <p><span>基本资料</span></p>
+      <p class='menuItem' onclick="window.location='setting-edit.html'"><span>基本资料</span><span class='enter'></span></p>
       <div class='black-line'></div>
-      <p><span>我的门票</span></p>
+      <p class='menuItem' onclick="window.location='myshow.html'"><span>我的门票</span><span class='enter'></span></p>
     </div>
 
     <!-- 修改推送方式按钮 -->
     <div id='setting-button' class='limit vertical-spacing '>
       <h3>演出提醒设置</h3>
       <div id='button-frame' class='setting-span round8'>
-        <p>
+        <p class='menuItem'>
           <span>已购买演出</span>
           <span class='setting-icon-style email'></span>
           <span class='setting-icon-style push'></span>
           <span class='setting-icon-style message'></span>
         </p>
         <div class='black-line'></div>
-        <p>
+        <p class='menuItem'>
            <span>已收藏演出</span>
            <span class='setting-icon-style email'></span>
            <span class='setting-icon-style push'></span>

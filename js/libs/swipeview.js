@@ -35,7 +35,7 @@ var SwipeView = (function(){
 			
 			div = document.createElement('div');
 			div.id = 'swipeview-slider';
-			div.style.cssText = 'position:relative;top:0;height:100%;width:100%;-webkit-transition-duration:0;-webkit-transform:translate3d(0,0,0);-webkit-transition-timining-function:ease-out';
+			div.style.cssText = 'position:relative;top:0;height:192px;width:100%;-webkit-transition-duration:0;-webkit-transform:translate3d(0,0,0);-webkit-transition-timining-function:ease-out';
 			this.wrapper.appendChild(div);
 			this.slider = div;
 
@@ -44,7 +44,7 @@ var SwipeView = (function(){
 			for (i=-1; i<2; i++) {
 				div = document.createElement('div');
 				div.id = 'swipeview-masterpage-' + (i+1);
-				div.style.cssText = '-webkit-transform:translateZ(0);position:absolute;top:0;height:100%;width:100%;left:' + i*100 + '%';
+				div.style.cssText = '-webkit-transform:translateZ(0);position:absolute;top:0;height:192px;width:100%;left:' + i*100 + '%';
 				if (!div.dataset) div.dataset = {};
 				pageIndex = i == -1 ? this.options.numberOfPages - 1 : i;
 				div.dataset.pageIndex = pageIndex;

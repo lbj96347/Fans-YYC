@@ -19,9 +19,6 @@
   </head>
     <body>
       <!-- 动态加载js以及图片 -->
-      <div id='load-js'></div>
-      <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'>
-      </script>
       <div id='container' class='showList-con show-list-back'>
         <!-- top carousel part -->
           <p id='playbill-button-list' style='z-index:999;'>
@@ -31,21 +28,21 @@
             <a class='playbill-button right'></a>
           </p>
         <!-- the swipe view part -->
-        <section id='playbill' class='round8 absolute'>
+        <div id='playbill' class='round8'>
           <!-- space -->
-          <section id='navBar' >
-            <ul id='nav' style='float:left;'>
-              <li id="prev" onclick="gallery.prev()">-</li>
+        <div id='navBar' >
+          <ul id='nav' style='float:left;'>
+              <li id="prev" onclick="gallery.prev()" style='display:none'>-</li>
               <li class="selected" onclick="gallery.goToPage(0)"></li>
               <li onclick="gallery.goToPage(1)"></li>
               <li onclick="gallery.goToPage(2)"></li>
               <li onclick="gallery.goToPage(3)"></li>
               <li onclick="gallery.goToPage(4)"></li>
               <li onclick="gallery.goToPage(5)"></li>
-              <li id="next" onclick="gallery.next()">+</li>
-            </ul>
-          </section>
-        </section>
+              <li id="next" onclick="gallery.next()" style='display:none'>+</li>
+          </ul>
+        </div>
+        </div>
         <!-- the swipe view part -->
 
         <!-- scroller part -->
@@ -53,7 +50,7 @@
           <div id='scroller' class='scroller absolute'>
             <ul class='showList'>
               <!-- show item -->
-              <li class='round8' onclick="window.location='detail.html'">
+              <li class='round8 showItem' onclick="window.location='detail.html'">
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>
@@ -69,7 +66,7 @@
               </li>
               <!-- show item -->
               <!-- show item -->
-              <li class='round8'>
+              <li class='round8 showItem'>
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>
@@ -85,7 +82,7 @@
               </li>
               <!-- show item -->
               <!-- show item -->
-              <li class='round8'>
+              <li class='round8 showItem'>
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>
@@ -101,7 +98,7 @@
               </li>
               <!-- show item -->
               <!-- show item -->
-              <li class='round8'>
+              <li class='round8 showItem'>
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>
@@ -117,7 +114,7 @@
               </li>
               <!-- show item -->
               <!-- show item -->
-              <li class='round8'>
+              <li class='round8 showItem'>
                 <div class='mini-playbill'>
                 </div>
                 <div class='show-message'>
@@ -139,15 +136,15 @@
         <!-- button list part -->
         <div id='float-button' class='absolute'>
           <div style='width:240px;height:32px;float:left;'>
-          <div id='function-button' style='width:280px;height:32px;float:left;'>
+          <div id='function-button' style='display:none;width:280px;height:32px;float:left;'>
           <a class='left left1' id='plus-button-1' ontouchstart='display1();'></a>
           <a class='left' id='plus-button-2' style='display:none;' ontouchstart='display2();'></a>
           <a class='middle1' id='collect-button' href='collect.html'></a>
           <a class='middle2' id='setting-button' href='setting.html'></a>
           </div>
           </div>
-          <a class='' id='more-button-1' ontouchstart='hideFunButton();'></a>
-          <a class='' id='more-button-2' style='display:none' ontouchstart='showFunButton();'></a>
+          <a id='more-button-1' style='display:none' ontouchstart='hideFunButton();'></a>
+          <a id='more-button-2' ontouchstart='showFunButton();'></a>
         </div>
         <!-- script for testing the menu -->
 
@@ -190,8 +187,9 @@
 
       </div>
     <!-- the swipe item -->
-    <script type='text/javascript' language='javascript' src='js/swipeItem.js'></script>
     </body>
+    <script type='text/javascript' language='javascript' src='js/libs/swipeview.js'></script>
+    <script type='text/javascript' language='javascript' src='js/swipeItem.js'></script>
     <!-- set up the iscoll -->
     <script type='text/javascript' language='javascript'>
       var myScroll;

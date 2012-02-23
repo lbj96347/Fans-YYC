@@ -7,39 +7,39 @@ var gallery,
   dots = document.querySelectorAll('#nav li'),
   slides = [
     {
-      img: 'images/pic01.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
-      img: 'images/pic02.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
-      img: 'images/pic03.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
-      img: 'images/pic04.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
-      img: 'images/pic05.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     },
     {
-      img: 'images/pic06.jpg',
-      width: 300,
-      height: 164,
+      img: 'images/ferrari.jpg',
+      width: 320,
+      height: 192,
       desc: '马家龙2012农村演唱会！（最多20个字）'
     }
   ];
