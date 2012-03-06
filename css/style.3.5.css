@@ -250,7 +250,8 @@ footer {
   margin-top: 10px; 
   width: 45px;
   height: 60px;
-  background: url(../images/test-playbill.jpg) no-repeat;
+  background: black;
+  background-size: 60px 80px;
   float: left;
 }
 .show-message {

@@ -1,48 +1,43 @@
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+var fan_token = localStorage.getItem('fansToken');
+$.ajax({
+    url: 'http://youyanchu.com/api' + '/performances',
+    data: { auth_token: fan_token },
+    type: 'GET',
+    dataType: 'json',
+    success: function(m){
+      for( x in m );
+      var count = x;
+      var slides = new Array();
+      if (count >6 )
+      {
+       var count = 6;
+       console.log(count);
+      }
+      else
+      {
+      for ( count in m )
+       {
+         slides[count] = {
+         img: m[count].poster.substring(20),
+         width: 320,
+         height: 192,
+         desc: m[count].description.substring(3,33)
+        }
+       }
+       //console.log(slides);
+       slideAnimate(slides);
+      }
+    }
+  });
 
+function slideAnimate(slides){
 var gallery,
   el,
   i,
   page,
-  dots = document.querySelectorAll('#nav li'),
-  slides = [
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    },
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    },
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    },
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    },
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    },
-    {
-      img: 'images/ferrari.jpg',
-      width: 320,
-      height: 192,
-      desc: '马家龙2012农村演唱会！（最多20个字）'
-    }
-  ];
+  dots = document.querySelectorAll('#nav li');
+  //slides = [];
 
 gallery = new SwipeView('#playbill', { numberOfPages: slides.length });
 
@@ -94,3 +89,4 @@ gallery.onMoveIn(function () {
   var className = gallery.masterPages[gallery.currentMasterPage].className;
   /(^|\s)swipeview-active(\s|$)/.test(className) || (gallery.masterPages[gallery.currentMasterPage].className = !className ? 'swipeview-active' : className + ' swipeview-active');
 });
+}

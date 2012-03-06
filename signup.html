@@ -15,6 +15,7 @@
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/libs/jquery.mobile-1.0.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/app.js'></script>
+    <script type='text/javascript' language='javascript' src='js/data.js'></script>
   </head>
     <body>
     <div id='container' class='landing-page'>
@@ -28,17 +29,14 @@
 
       <div class='index-wrapper'>
         <form id='login' name='login' method='post' action='#'>
-          <p><input id='email' class='account-input round8' type='email' name='email' placeholder='帐号'/></p>
+          <p><input id='username' class='account-input round8' type='name' name='email' placeholder='名字'/></p>
+          <p><input id='email' class='account-input round8' type='email' name='password' placeholder='邮箱' /></p>
           <p><input id='password' class='account-input round8' type='password' name='password' placeholder='密码' /></p>
-          <p><input id='password' class='account-input round8' type='password' name='password' placeholder='确认密码' /></p>
-          <p><button class='account-button round8' >注册</button></p>
+          <p><input id='password_confirmation' class='account-input round8' type='password' name='password_confirmation' placeholder='确认密码' /></p>
+          <p><input class='account-button round8' type='submit' onclick='signup();' value='注册'/></p>
         </form>
       </div>
 
-      <footer>
-      <!-- gm logo insert here -->
-      <a id='company'></a>
-      </footer>
     </div>
     <!-- test the swipe view -->
     </body>

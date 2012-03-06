@@ -15,6 +15,7 @@
     <script type='text/javascript' language='javascript' src='js/libs/jquery-1.7.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/libs/jquery.mobile-1.0.min.js'></script>
     <script type='text/javascript' language='javascript' src='js/app.js'></script>
+    <script type='text/javascript' language='javascript' src='js/data.js'></script>
   </head>
     <body>
     <div id='container' class='landing-page'>
@@ -27,9 +28,9 @@
 
       <div class='index-wrapper'>
         <form id='login' name='login' method='post' action='#'>
-          <p><input id='email' class='account-input round8' type='email' name='email' placeholder='帐号'/></p>
-          <p><input id='password' class='account-input round8' type='password' name='password' placeholder='密码' /></p>
-          <p><input class='account-button round8' type='submit' value='登陆' name='signin'  /></p>
+          <p><input id='username' class='account-input round8' type='email' name='email' placeholder='帐号' value='a@a.com'/></p>
+          <p><input id='password' class='account-input round8' type='password' name='password' placeholder='密码'  value='123456'/></p>
+          <p><input class='account-button round8' id='form-submit' type='submit' value='登陆' name='signin'  /></p>
           <p><button class='account-button round8' onclick="window.location='signup.html'">注册</button></p>
         </form>
       </div>
