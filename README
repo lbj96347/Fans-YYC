@@ -5,6 +5,10 @@
 友演出的官方网站是：http://www.youyanchu.com/
 
 本程序使用框架为：
-  iscroll
-  jquery
-  phonegap
+  iscroll （用于处理页面滚动，以及部分手势事件，包括scroll和swipe）
+  jquery （方便各种dom处理以及动画等）
+  jquery mobile （主要使用场景转场动画以及页面元素样式处理）
+  phonegap （用于包装应用以及通过去桥调用api）
+
+该项目在Github上面的代码并没有完全地制作完毕，可以提供各位参考学习之用。此后会推出一个Phonegap Template的项目，帮助开发
+的时候更快地创建Phonegap项目，以及对部分obj-c代码进行优化。
